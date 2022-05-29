@@ -3,10 +3,14 @@ import {
   TopNavigation,
   Rectangle1,
   HeaderTitle,
+  HomeButton,
+  AboutButton,
+  ProjectsButton,
   MainText,
   SecondaryText,
 } from './styles';
 import fox from '../../assets/fox.png';
+import { Links } from '../../types/enums';
 
 function Home() {
   return (
@@ -14,6 +18,11 @@ function Home() {
       <TopNavigation>
         <Rectangle1>😀</Rectangle1>
         <HeaderTitle> mateuseap </HeaderTitle>
+        <span style={{ whiteSpace: 'nowrap' }}>
+          <HomeButton to={Links.HOME}>Home</HomeButton>
+          <AboutButton to={Links.ABOUT}>Sobre mim</AboutButton>
+          <ProjectsButton to={Links.PROJECTS}>Projetos</ProjectsButton>
+        </span>
       </TopNavigation>
       <MainText>
         Meu nome é Mateus Elias, seja bem vindo ao meu website pessoal.
