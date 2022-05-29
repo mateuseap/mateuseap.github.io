@@ -1,9 +1,7 @@
+import Rotas from './routes';
+
 function App() {
-  return (
-    <div>
-      mateuseap
-    </div>
-  );
+  return <Rotas />;
 }
 
 export default App;
