@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { Box } from '@mui/material';
 
 export const Background = styled.div`
   width: 100vw;
@@ -103,4 +104,33 @@ export const ProjectsButton = styled(NavLink)`
   text-decoration: none;
 
   color: #ffffff;
+`;
+
+export const FrogNinja = styled.div`
+  position: absolute;
+  top: calc(50vh - 182.5px);
+  left: calc(50vw - 67.5px);
+
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  display: block;
+  align-items: center;
+
+  text-decoration: none;
+
+  color: #ffffff;
+`;
+
+export const FrogNinjaModalBox = styled(Box)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  border: 2px solid #000;
+  boxshadow: 24;
+  p: 4;
 `;
