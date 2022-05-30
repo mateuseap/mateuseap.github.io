@@ -33,7 +33,7 @@ function Home() {
       </SecondaryText>
       <img
         src={fox}
-        alt='fox'
+        alt='Fox 🦊'
         style={{
           position: 'absolute',
           width: '45vw',
