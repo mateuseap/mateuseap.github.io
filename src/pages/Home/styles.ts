@@ -14,6 +14,30 @@ export const TopNavigation = styled.div`
   height: 42px;
   left: 165px;
   top: 30px;
+  .openNav {
+    display: flex;
+  }
+  .openBurger {
+    div {
+      background: #000000;
+    }
+    .line1 {
+      transform: rotateZ(45deg) translateY(490%);
+    }
+
+    .line2 {
+      display: none;
+    }
+
+    .line3 {
+      transform: rotateZ(-45deg) translateY(-490%);
+    }
+  }
+  @media (max-width: 1300px) {
+    width: 90vw;
+    left: 0;
+    margin: 0 5vw;
+  }
 `;
 
 export const Rectangle1 = styled.div`
@@ -48,7 +72,7 @@ export const HeaderTitle = styled.div`
   color: #ffffff;
 `;
 
-export const HomeButton = styled(NavLink)`
+/*export const HomeButton = styled(NavLink)`
   position: absolute;
   left: 50vw;
   top: 14.29%;
@@ -103,6 +127,65 @@ export const ProjectsButton = styled(NavLink)`
   text-decoration: none;
 
   color: #ffffff;
+`;*/
+
+export const BurgerMenu = styled.div`
+  position: absolute;
+  right: 0%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  z-index: 15;
+  div {
+    width: 40px;
+    height: 5px;
+    background: #ffffff;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const MenuItems = styled.div`
+  position: absolute;
+  right: 0%;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+  a {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0px;
+    width: 200px;
+    height: 130px;
+    padding: 30px 0;
+    padding-top: 70px;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    a {
+      margin: 15px 0;
+      color: #000000;
+    }
+    transform: translateY(-5%) translateX(5%);
+    background: #ffffff;
+    display: none;
+  }
 `;
 
 export const MainText = styled.div`
