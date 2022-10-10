@@ -22,13 +22,19 @@ function Projects() {
   return (
     <Background>
       <TopNavigation>
-        <Rectangle1>😀</Rectangle1>
-        <HeaderTitle> mateuseap </HeaderTitle>
-        <span style={{ whiteSpace: 'nowrap' }}>
+        <HeaderTitle>😀 mateuseap </HeaderTitle>
+        <div
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+          }}
+        >
           <HomeButton to={Links.HOME}>Home</HomeButton>
           <AboutButton to={Links.ABOUT}>Sobre mim</AboutButton>
           <ProjectsButton to={Links.PROJECTS}>Projetos</ProjectsButton>
-        </span>
+        </div>
       </TopNavigation>
       <FrogNinja>
         Frog Ninja 🐸

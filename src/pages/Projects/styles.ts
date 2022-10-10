@@ -10,11 +10,10 @@ export const Background = styled.div`
 `;
 
 export const TopNavigation = styled.div`
-  position: absolute;
-  width: 1110px;
-  height: 42px;
-  left: 165px;
-  top: 30px;
+  height: 70px;
+  top: 5px;
+  display: flex;
+  width: 100%;
 `;
 
 export const Rectangle1 = styled.div`
@@ -32,12 +31,6 @@ export const Rectangle1 = styled.div`
 `;
 
 export const HeaderTitle = styled.div`
-  position: absolute;
-  left: 3.51%;
-  right: 90%;
-  top: 14.29%;
-  bottom: 11.9%;
-
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 500;
@@ -45,65 +38,36 @@ export const HeaderTitle = styled.div`
   line-height: 31px;
   display: flex;
   align-items: center;
-
+  width: 100%;
   color: #ffffff;
+  padding-left: 10px;
 `;
 
 export const HomeButton = styled(NavLink)`
-  position: absolute;
-  left: 50vw;
-  top: 14.29%;
-  bottom: 11.9%;
-
+  color: #ffffff;
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 31px;
-  display: flex;
-  align-items: center;
-
   text-decoration: none;
-
-  color: #ffffff;
 `;
 
 export const AboutButton = styled(NavLink)`
-  position: absolute;
-  left: 55vw;
-  top: 14.29%;
-  bottom: 11.9%;
-
+  color: #ffffff;
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 31px;
-  display: flex;
-  align-items: center;
-
   text-decoration: none;
-
-  color: #ffffff;
 `;
 
 export const ProjectsButton = styled(NavLink)`
-  position: absolute;
-  left: calc(60.85vw + 31.02px);
-  top: 14.29%;
-  bottom: 11.9%;
-
+  color: #ffffff;
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 31px;
-  display: flex;
-  align-items: center;
-
   text-decoration: none;
-
-  color: #ffffff;
 `;
 
 export const FrogNinja = styled.div`
