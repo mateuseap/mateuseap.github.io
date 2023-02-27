@@ -1,41 +1,15 @@
 import {
   Background,
-  TopNavigation,
-  Rectangle1,
-  HeaderTitle,
-  MenuItems,
-  BurgerMenu,
   MainText,
   SecondaryText,
 } from './styles';
 import fox from '../../assets/fox.png';
-import { Links } from '../../types/enums';
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import Navbar from '../../components/Navbar';
 
 function Home() {
-  const [isOpen, setisOpen] = useState(false);
   return (
     <Background>
-      <TopNavigation>
-        <Rectangle1>😀</Rectangle1>
-        <HeaderTitle> mateuseap </HeaderTitle>
-        <BurgerMenu
-          className={isOpen ? 'openBurger' : ''}
-          onClick={() => {
-            setisOpen(!isOpen);
-          }}
-        >
-          <div className='line1'></div>
-          <div className='line2'></div>
-          <div className='line3'></div>
-        </BurgerMenu>
-        <MenuItems className={isOpen ? 'openNav' : ''}>
-          <NavLink to={Links.HOME}>Home</NavLink>
-          <NavLink to={Links.ABOUT}>Sobre mim</NavLink>
-          <NavLink to={Links.PROJECTS}>Projetos</NavLink>
-        </MenuItems>
-      </TopNavigation>
+      <Navbar />
       <MainText>
         Meu nome é Mateus Elias, seja bem vindo ao meu website pessoal.
       </MainText>
