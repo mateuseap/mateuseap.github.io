@@ -15,7 +15,7 @@ function Home() {
       </MainText>
       <SecondaryText>
         Ainda estamos em fase de construção, em breve o website estará recheado
-        😎
+        🚀
       </SecondaryText>
       <img
         src={fox}
