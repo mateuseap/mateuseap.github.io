@@ -1,8 +1,4 @@
-import {
-  Background,
-  MainText,
-  SecondaryText,
-} from './styles';
+import { Background, MainText, SecondaryText } from './styles';
 import fox from '../../assets/fox.png';
 import Navbar from '../../components/Navbar';
 
