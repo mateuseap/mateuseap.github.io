@@ -1,0 +1,16 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  name: Build & Deploy
+  job:
+    runs-on: ubuntu-latest
+    steps:
+        run: |
+          npm install
+          npm run predeploy
+          npm run deploy
