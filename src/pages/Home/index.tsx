@@ -28,8 +28,7 @@ function Home() {
         Meu nome é Mateus Elias, seja bem vindo ao meu website pessoal.
       </MainText>
       <SecondaryText>
-        Ainda estamos em fase de construção, em breve o website estará recheado
-        😎
+        Novidades em breve...
       </SecondaryText>
       <img
         src={fox}
