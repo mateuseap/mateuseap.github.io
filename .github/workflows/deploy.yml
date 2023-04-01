@@ -6,10 +6,14 @@ on:
       - main
 
 jobs:
-  name: Build & Deploy
-  job:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Build & Deploy
         run: |
           npm install
           npm run predeploy
