@@ -10,13 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: de-vri-es/setup-git-credentials@v2
         with:
-          persist-credentials: false
+          credentials: ${{ secrets.GIT_CREDENTIALS }}
+
+      - name: Git setup
+        run: |
+          git config --global user.email "meap@cin.ufpe.br"
+          git config --global user.name "Mateus Elias"
+
+      - name: Git fetch
+        run: |
+          git fetch --all
+          git branch -a
 
       - name: Build & Deploy
         run: |
-          git config --global user.name "mateuseap"
-          git config --global user.email "meap@cin.ufpe.br"
           npm install
           npm run predeploy
           npm run deploy
