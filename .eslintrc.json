@@ -33,6 +33,7 @@
         "import"
     ],
     "rules": {
+        "linebreak-style": 0,
         "react/jsx-props-no-spreading": "off",
         "react/jsx-wrap-multilines": ["error", {
             "prop": "ignore"
