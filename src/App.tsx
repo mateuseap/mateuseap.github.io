@@ -1,7 +1,7 @@
-import Rotas from './routes';
+import AllRoutes from './routes';
 
 function App() {
-  return <Rotas />;
+  return <AllRoutes />;
 }
 
 export default App;
