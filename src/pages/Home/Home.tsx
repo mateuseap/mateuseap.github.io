@@ -1,11 +1,10 @@
-import { Background, MainText, SecondaryText } from './styles';
+import { MainText, SecondaryText } from './styles';
 import fox from '../../assets/fox.png';
-import Navbar from '../../components/Navbar';
+import DefaultPage from '../../components/DefaultPage/DefaultPage';
 
 function Home() {
   return (
-    <Background>
-      <Navbar />
+    <DefaultPage>
       <MainText>
         Meu nome é Mateus Elias, seja bem vindo ao meu website pessoal.
       </MainText>
@@ -24,7 +23,7 @@ function Home() {
           top: '10vh',
         }}
       />
-    </Background>
+    </DefaultPage>
   );
 }
 
