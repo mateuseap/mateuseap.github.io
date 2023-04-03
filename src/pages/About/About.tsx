@@ -10,29 +10,11 @@ import {
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import BookIcon from '@mui/icons-material/Book';
 import { Typography } from '@mui/material';
-import { Links } from '../../types/enums';
-import {
-  Background,
-  TopNavigation,
-  Rectangle1,
-  HeaderTitle,
-  HomeButton,
-  AboutButton,
-  ProjectsButton,
-} from './styles';
+import DefaultPage from '../../components/DefaultPage/DefaultPage';
 
 function About() {
   return (
-    <Background>
-      <TopNavigation>
-        <Rectangle1>😀</Rectangle1>
-        <HeaderTitle> mateuseap </HeaderTitle>
-        <span style={{ whiteSpace: 'nowrap' }}>
-          <HomeButton to={Links.HOME}>Home</HomeButton>
-          <AboutButton to={Links.ABOUT}>Sobre mim</AboutButton>
-          <ProjectsButton to={Links.PROJECTS}>Projetos</ProjectsButton>
-        </span>
-      </TopNavigation>
+    <DefaultPage>
       <Timeline
         position='alternate'
         sx={{
@@ -102,7 +84,7 @@ function About() {
           </TimelineContent>
         </TimelineItem>
       </Timeline>
-    </Background>
+    </DefaultPage>
   );
 }
 

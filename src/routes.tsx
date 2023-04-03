@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Links } from './types/enums';
-import Home from './pages/Home/index';
-import About from './pages/About/index';
-import Projects from './pages/Projects/index';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
 
 function Rotas() {
   return (
