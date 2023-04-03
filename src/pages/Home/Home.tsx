@@ -27,8 +27,10 @@ function Home() {
     <DefaultPage>
       <div className='h-screen flex flex-row justify-center items-center'>
         <div className='w-full flex flex-col gap-y-4'>
-          <div className='text-5xl text-center hover:bg-emerald-900'>
-            Meu nome é Mateus Elias, seja bem vindo ao meu website pessoal.
+          <div className='text-5xl text-center hover:bg-[#dedede] hover:text-black'>
+            Meu nome é{' '}
+            <span className='text-black bg-[#dedede]'>Mateus Elias</span>, seja
+            bem vindo ao meu website pessoal.
           </div>
           <div className='flex justify-center gap-x-6'>
             {medias.map(media => {
@@ -56,7 +58,7 @@ function Home() {
             alt='Fox 🦊'
             style={{
               position: 'fixed',
-              width: '45vw',
+              width: '50vw',
               height: 'auto',
               right: '0',
               bottom: '0',
