@@ -3,7 +3,7 @@ import Sidebar from '../../components/Sidebar/Sidebar';
 
 const DefaultPage = ({
   className = 'flex',
-  childrenClassName = 'h-full w-full flex flex-col flex-1 gap-y-8 pr-6',
+  childrenClassName = 'h-full w-full flex flex-col flex-1 gap-y-8',
   children = null,
   HtmlTag = 'div',
   sidebar = true,
