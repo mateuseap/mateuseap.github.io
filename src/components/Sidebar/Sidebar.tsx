@@ -6,7 +6,7 @@ import {
 import SidebarItem, { SidebarItemProps } from '../SidebarItem/SidebarItem';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import ScoraJourneyLogoPoints from '../../assets/profile-pic.jpg';
+import ProfilePicture from '../../assets/profile-pic.jpg';
 
 function Sidebar() {
   const actualPath = useLocation().pathname;
@@ -50,9 +50,9 @@ function Sidebar() {
     <aside className='h-screen sticky top-0 w-32 pt-8 flex flex-col items-center z-20'>
       <div className='h-16 w-16 pr-0.5 flex items-center justify-center bg-[#dedede] rounded-full'>
         <img
-          src={ScoraJourneyLogoPoints}
+          src={ProfilePicture}
           alt='Mateus Elias'
-          className='h-12 w-12 rounded-full'
+          className='h-11 w-11 rounded-full'
           draggable='false'
         />
       </div>
