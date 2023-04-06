@@ -6,8 +6,11 @@ export interface CardProps {
   title: string;
   image: string;
   description: string;
-  redirectUrl?: string;
   repoUrl?: string;
+  button?: boolean;
+  buttonContent?: string;
+  buttonRedirectUrl?: string;
+  buttonOnClick?: () => void;
   height?: string;
   width?: string;
 }
@@ -16,8 +19,11 @@ function Card({
   title,
   image,
   description,
-  redirectUrl,
   repoUrl,
+  button,
+  buttonContent,
+  buttonRedirectUrl,
+  buttonOnClick,
   height = '32',
   width = 'full',
 }: CardProps) {
@@ -54,13 +60,24 @@ function Card({
       <div className='pr-4 pl-4 font-medium text-base hover:text-white hover:bg-[#121212]'>
         {description}
       </div>
-      {redirectUrl && (
-        <NavLink
+      {button && (
+        <button
           className='pr-4 pl-4 text-white bg-[#121212] rounded-lg'
-          to={redirectUrl}
+          onClick={buttonOnClick}
         >
-          JOGAR
-        </NavLink>
+          {buttonRedirectUrl ? (
+            <a
+              key={buttonContent}
+              href={buttonRedirectUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {buttonContent}
+            </a>
+          ) : (
+            <>{buttonContent}</>
+          )}
+        </button>
       )}
     </div>
   );
