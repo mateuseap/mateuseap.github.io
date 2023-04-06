@@ -4,28 +4,40 @@ import TwentyFortyEight from '../../assets/2048.png';
 import Palavrinha from '../../assets/palavrinha.png';
 import DefaultPage from '../../components/DefaultPage/DefaultPage';
 import Card, { CardProps } from '../../components/Card/Card';
+import FrogNinjaModal from '../../components/FrogNinjaModal/FrogNinjaModal';
 
 function Projects() {
+  const [isFrogNinjaModalOpen, setIsFrogNinjaModalOpen] = useState(false);
+
   const topCards: Array<CardProps> = [
     {
       title: 'Frog Ninja 🐸',
       image: FrogNinja,
       description: 'Jogo de plataforma 2D desenvolvido utilizando o Unity',
+      button: true,
+      buttonContent: 'Jogar',
+      buttonOnClick: () => {
+        setIsFrogNinjaModalOpen(true);
+      },
     },
     {
       title: '2048 🔢',
       image: TwentyFortyEight,
       description: 'Jogo 2048 desenvolvido utilizando React com JavaScript',
-      redirectUrl: '/2048',
       repoUrl: 'https://github.com/mateuseap/2048',
+      button: true,
+      buttonContent: 'Jogar',
+      buttonRedirectUrl: '/2048',
     },
     {
       title: 'Palavrinha 📚',
       image: Palavrinha,
       description:
         'Jogo de advivinhar a palavra desenvolvido utilizando React com JavaScript',
-      redirectUrl: '/palavrinha',
       repoUrl: 'https://github.com/mateuseap/palavrinha',
+      button: true,
+      buttonContent: 'Jogar',
+      buttonRedirectUrl: '/palavrinha',
     },
   ];
   const [index, setIndex] = useState<number>(0);
@@ -54,9 +66,13 @@ function Projects() {
             title={topCards[index].title}
             image={topCards[index].image}
             description={topCards[index].description}
-            redirectUrl={topCards[index].redirectUrl}
             repoUrl={topCards[index].repoUrl}
+            button={topCards[index].button}
+            buttonContent={topCards[index].buttonContent}
+            buttonRedirectUrl={topCards[index].buttonRedirectUrl}
+            buttonOnClick={topCards[index].buttonOnClick}
           />
+          {isFrogNinjaModalOpen && <FrogNinjaModal />}
         </div>
         <button className='text-[3rem] pl-12' onClick={indexIncrement}>
           {'>'}
