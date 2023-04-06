@@ -15,7 +15,7 @@ function Projects() {
       image: FrogNinja,
       description: 'Jogo de plataforma 2D desenvolvido utilizando o Unity',
       button: true,
-      buttonContent: 'Jogar',
+      buttonContent: 'JOGAR',
       buttonOnClick: () => {
         setIsFrogNinjaModalOpen(true);
       },
@@ -26,7 +26,7 @@ function Projects() {
       description: 'Jogo 2048 desenvolvido utilizando React com JavaScript',
       repoUrl: 'https://github.com/mateuseap/2048',
       button: true,
-      buttonContent: 'Jogar',
+      buttonContent: 'JOGAR',
       buttonRedirectUrl: '/2048',
     },
     {
@@ -36,7 +36,7 @@ function Projects() {
         'Jogo de advivinhar a palavra desenvolvido utilizando React com JavaScript',
       repoUrl: 'https://github.com/mateuseap/palavrinha',
       button: true,
-      buttonContent: 'Jogar',
+      buttonContent: 'JOGAR',
       buttonRedirectUrl: '/palavrinha',
     },
   ];
