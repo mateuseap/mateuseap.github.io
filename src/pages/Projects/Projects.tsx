@@ -1,73 +1,82 @@
 import { useState } from 'react';
-import { Button, Typography, Modal } from '@mui/material';
-import { FrogNinjaModalBox } from './styles';
-import frogNinja from '../../assets/frog-ninja.png';
+import FrogNinja from '../../assets/frog-ninja.png';
+import TwentyFortyEight from '../../assets/2048.png';
+import Palavrinha from '../../assets/palavrinha.png';
 import DefaultPage from '../../components/DefaultPage/DefaultPage';
+import Card, { CardProps } from '../../components/Card/Card';
+import FrogNinjaModal from '../../components/FrogNinjaModal/FrogNinjaModal';
 
 function Projects() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [isFrogNinjaModalOpen, setIsFrogNinjaModalOpen] = useState(false);
+
+  const cards: Array<CardProps> = [
+    {
+      title: 'Frog Ninja 🐸',
+      image: FrogNinja,
+      description: 'Jogo de plataforma 2D desenvolvido utilizando o Unity',
+      button: true,
+      buttonContent: 'JOGAR',
+      buttonOnClick: () => {
+        setIsFrogNinjaModalOpen(true);
+      },
+    },
+    {
+      title: '2048 🔢',
+      image: TwentyFortyEight,
+      description: 'Jogo 2048 desenvolvido utilizando React com JavaScript',
+      repoUrl: 'https://github.com/mateuseap/2048',
+      button: true,
+      buttonContent: 'JOGAR',
+      buttonRedirectUrl: '/2048',
+    },
+    {
+      title: 'Palavrinha 📚',
+      image: Palavrinha,
+      description:
+        'Jogo de advivinhar a palavra desenvolvido utilizando React com JavaScript',
+      repoUrl: 'https://github.com/mateuseap/palavrinha',
+      button: true,
+      buttonContent: 'JOGAR',
+      buttonRedirectUrl: '/palavrinha',
+    },
+  ];
+  const [index, setIndex] = useState<number>(0);
+
+  function indexIncrement() {
+    if (index < cards.length - 1) {
+      setIndex(index + 1);
+    }
+  }
+
+  function indexDecrement() {
+    if (index > 0) {
+      setIndex(index - 1);
+    }
+  }
 
   return (
-    <DefaultPage>
-      <div className='flex items-center justify-center h-screen'>
-        <div className='z-10 mb-[355px]'>Frog Ninja 🐸</div>
-        <img
-          src={frogNinja}
-          alt='Frog Ninja 🐸'
-          style={{
-            position: 'absolute',
-            height: '335px',
-          }}
-          draggable='false'
-        />
-        <Button
-          variant='contained'
-          onClick={handleOpen}
-          style={{ position: 'absolute', top: '525px', color: 'white' }}
-        >
-          Jogar
-        </Button>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby='modal-modal-title'
-          aria-describedby='modal-modal-description'
-        >
-          <FrogNinjaModalBox>
-            <Typography
-              id='modal-modal-title'
-              variant='h6'
-              component='h2'
-              style={{
-                color: 'white',
-              }}
-            >
-              Frog Ninja 🐸
-            </Typography>
-            <iframe
-              title='Frog Ninja 🐸'
-              src='https://i.simmer.io/@Meap018/frog-ninja'
-              style={{ width: '50vw', height: '62vh' }}
-            />
-            <Typography
-              id='modal-modal-description'
-              sx={{ mt: 1 }}
-              style={{
-                color: 'white',
-              }}
-            >
-              Colete todos os morangos e mate todos os inimigos, após isso vá
-              até o checkpoint para passar de fase 👾
-              <br />
-              <br />
-              Movimentos (Esquerda/Direita): Setas ou A/D
-              <br />
-              Pulo: Barra de Espaço
-            </Typography>
-          </FrogNinjaModalBox>
-        </Modal>
+    <DefaultPage childrenClassName='flex flex-col flex-1 pr-6'>
+      <div className='h-full w-full flex flex-row justify-center items-center'>
+        <button className='text-[3rem] pr-12' onClick={indexDecrement}>
+          {'<'}
+        </button>
+        <div className='flex flex-row gap-x-3'>
+          <Card
+            key={cards[index].title}
+            title={cards[index].title}
+            image={cards[index].image}
+            description={cards[index].description}
+            repoUrl={cards[index].repoUrl}
+            button={cards[index].button}
+            buttonContent={cards[index].buttonContent}
+            buttonRedirectUrl={cards[index].buttonRedirectUrl}
+            buttonOnClick={cards[index].buttonOnClick}
+          />
+          {isFrogNinjaModalOpen && <FrogNinjaModal />}
+        </div>
+        <button className='text-[3rem] pl-12' onClick={indexIncrement}>
+          {'>'}
+        </button>
       </div>
     </DefaultPage>
   );
