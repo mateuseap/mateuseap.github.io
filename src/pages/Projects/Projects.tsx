@@ -9,7 +9,7 @@ import FrogNinjaModal from '../../components/FrogNinjaModal/FrogNinjaModal';
 function Projects() {
   const [isFrogNinjaModalOpen, setIsFrogNinjaModalOpen] = useState(false);
 
-  const topCards: Array<CardProps> = [
+  const cards: Array<CardProps> = [
     {
       title: 'Frog Ninja 🐸',
       image: FrogNinja,
@@ -43,7 +43,7 @@ function Projects() {
   const [index, setIndex] = useState<number>(0);
 
   function indexIncrement() {
-    if (index < topCards.length - 1) {
+    if (index < cards.length - 1) {
       setIndex(index + 1);
     }
   }
@@ -62,15 +62,15 @@ function Projects() {
         </button>
         <div className='flex flex-row gap-x-3'>
           <Card
-            key={topCards[index].title}
-            title={topCards[index].title}
-            image={topCards[index].image}
-            description={topCards[index].description}
-            repoUrl={topCards[index].repoUrl}
-            button={topCards[index].button}
-            buttonContent={topCards[index].buttonContent}
-            buttonRedirectUrl={topCards[index].buttonRedirectUrl}
-            buttonOnClick={topCards[index].buttonOnClick}
+            key={cards[index].title}
+            title={cards[index].title}
+            image={cards[index].image}
+            description={cards[index].description}
+            repoUrl={cards[index].repoUrl}
+            button={cards[index].button}
+            buttonContent={cards[index].buttonContent}
+            buttonRedirectUrl={cards[index].buttonRedirectUrl}
+            buttonOnClick={cards[index].buttonOnClick}
           />
           {isFrogNinjaModalOpen && <FrogNinjaModal />}
         </div>
