@@ -18,6 +18,7 @@ function FrogNinjaModal() {
           <div className='flex flex-1 pl-16 pb-2 justify-center items-center'>
             Frog Ninja 🐸
           </div>
+          {/* eslint-disable-next-line react/style-prop-object */}
           <Tooltip style='light' content={'Fechar'} placement='right'>
             <button onClick={() => setOpen(false)}>
               <XCircleIcon className='h-10 w-10 float-right hover:bg-white hover:rounded-xl hover:shadow-md stroke-[0.8px]' />

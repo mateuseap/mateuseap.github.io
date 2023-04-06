@@ -1,4 +1,4 @@
-import GithubLogo from '../../assets/github-logo.svg';
+import GitHubLogo from '../../assets/github-logo.svg';
 import { Tooltip } from 'flowbite-react';
 
 export interface CardProps {
@@ -35,6 +35,7 @@ function Card({
           <div className='flex flex-1 pl-14 justify-center items-center'>
             {title}
           </div>
+          {/* eslint-disable-next-line react/style-prop-object */}
           <Tooltip style='light' content={'Repositório'} placement='right'>
             <a
               key={'GitHub Logo'}
@@ -44,8 +45,9 @@ function Card({
             >
               <img
                 className='h-10 w-10 float-right hover:bg-white hover:rounded-xl hover:shadow-md'
-                src={GithubLogo}
+                src={GitHubLogo}
                 draggable='false'
+                alt='GitHub'
               />
             </a>
           </Tooltip>
@@ -55,7 +57,11 @@ function Card({
           {title}
         </div>
       )}
-      <img className={`h-auto w-[40vw]`} src={image} />
+      <img
+        className={`h-auto w-[40vw]`}
+        src={image}
+        alt='Imagem de um projeto'
+      />
       <div className='pr-4 pl-4 font-medium text-base hover:text-white hover:bg-[#121212]'>
         {description}
       </div>
