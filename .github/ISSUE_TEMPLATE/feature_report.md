@@ -7,5 +7,5 @@ assignees: ''
 
 ---
 
-**Describe the feature you want**
+**Issue description**
 A clear description of what you want to happen.
