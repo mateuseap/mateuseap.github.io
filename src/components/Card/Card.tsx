@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import GithubLogo from '../../assets/github-logo.svg';
 import { Tooltip } from 'flowbite-react';
 
