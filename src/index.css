@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Firefox */
 * {
@@ -20,12 +22,15 @@
   border-radius: 14px;
 }
 
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../public/fonts/Satoshi.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
   html {
-    font-family: 'Satoshi';
     background-color: #121212;
     color: #FFFF;
   }
