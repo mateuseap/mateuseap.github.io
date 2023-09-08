@@ -31,7 +31,10 @@ import {
   TbBrandDocker as DockerIcon,
   TbBrandDjango as DjangoIcon,
 } from 'react-icons/tb';
-import { BiLogoJava as JavaIcon, BiLogoGoogleCloud as GoogleCloudIcon } from 'react-icons/bi';
+import {
+  BiLogoJava as JavaIcon,
+  BiLogoGoogleCloud as GoogleCloudIcon,
+} from 'react-icons/bi';
 
 function Home() {
   const medias = [
@@ -116,7 +119,7 @@ function Home() {
       Icon: DockerIcon,
     },
     {
-      name: 'Keycloak'
+      name: 'Keycloak',
     },
     {
       name: 'Jest',
@@ -181,7 +184,7 @@ function Home() {
             <div>Pernambuco - Brazil</div>
           </div>
         </div>
-        <section className='mt-2 mb-20'>
+        <section className='mt-2'>
           <p className='text-xl font-medium'>My Skills</p>
           <div className='mt-4'>
             <p className='text-sm font-normal'>Programming Languages</p>
@@ -202,6 +205,7 @@ function Home() {
             </div>
           </div>
         </section>
+        <div className='mt-10 mb-20 text-center'>Portfolio still under development...</div>
       </main>
     </DefaultPage>
   );
