@@ -1,8 +1,12 @@
-import fox from '../../assets/fox.png';
 import DefaultPage from '../../components/DefaultPage/DefaultPage';
 import GitHubLogo from '../../assets/github-logo.svg';
 import LinkedInLogo from '../../assets/linkedin-logo.svg';
 import InstagramLogo from '../../assets/instagram-logo.svg';
+import {
+  BriefcaseIcon,
+  AcademicCapIcon,
+  MapPinIcon,
+} from '@heroicons/react/24/outline';
 
 function Home() {
   const medias = [
@@ -23,49 +27,46 @@ function Home() {
     },
   ];
 
+  const profilePicture = 'https://avatars.githubusercontent.com/u/52019009';
+
   return (
-    <DefaultPage>
-      <div className='h-screen flex flex-row justify-center items-center'>
-        <div className='w-full flex flex-col gap-y-4'>
-          <div className='text-5xl text-center hover:bg-[#dedede] hover:text-black'>
-            Meu nome é{' '}
-            <span className='text-black bg-[#dedede]'>Mateus Elias</span>, seja
-            bem vindo ao meu website pessoal.
-          </div>
-          <div className='flex justify-center gap-x-6'>
-            {medias.map(media => {
-              return (
-                <a
-                  key={media.alt}
-                  href={media.url}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    className='h-12 w-12 rounded-lg bg-[#dedede]'
-                    src={media.svg}
-                    alt={media.alt}
-                    draggable='false'
-                  />
-                </a>
-              );
-            })}
-          </div>
-        </div>
-        <div className='w-full'>
+    <DefaultPage sidebar={false}>
+      <main className='flex flex-col mx-auto min-h-screen max-w-[720px] px-4 pt-40 gap-y-6'>
+        <div className='h-full w-full flex justify-center sm:justify-start items-center text-3xl gap-x-4 font-medium'>
           <img
-            src={fox}
-            alt='Fox 🦊'
-            style={{
-              position: 'fixed',
-              width: '50vw',
-              height: 'auto',
-              right: '0',
-              bottom: '0',
-            }}
+            src={profilePicture}
+            alt='Foto de Mateus Elias'
+            className='rounded-full shadow-md h-28 w-28 border-white border-2'
+            draggable='false'
           />
+          <div className='flex flex-col'>
+            Mateus
+            <br />
+            Elias
+            <br />
+            <div className='text-sm pt-1'>@mateuseap</div>
+          </div>
         </div>
-      </div>
+        <div className='h-full w-full font-light'>
+          Passionate about coding and committed to using technology to assist
+          and empower others, I actively seek out opportunities to collaborate
+          and innovate.
+        </div>
+        <div className='h-full w-full flex flex-col sm:flex-row gap-x-4 text-xs font-medium text-[#b0b0b0] border-[#909090] border-t border-b items-center justify-center pt-2 pb-2'>
+          <div className='flex gap-x-1 items-center'>
+            <BriefcaseIcon className='h-5 w-5' />
+            <div>Full Stack Developer @ Oncase</div>
+          </div>
+          <div className='flex gap-x-1 items-center'>
+            <AcademicCapIcon className='h-5 w-5' />
+            <div>B.Sc. Student of Computer Science @ CIn/UFPE</div>
+          </div>
+          <div className='flex gap-x-1 items-center'>
+            <MapPinIcon className='h-5 w-5' />
+            <div>Pernambuco - Brazil</div>
+          </div>
+        </div>
+      </main>
     </DefaultPage>
   );
 }
