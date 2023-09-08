@@ -1,7 +1,4 @@
 import DefaultPage from '../../components/DefaultPage/DefaultPage';
-import GitHubLogo from '../../assets/github-logo.svg';
-import LinkedInLogo from '../../assets/linkedin-logo.svg';
-import InstagramLogo from '../../assets/instagram-logo.svg';
 import {
   BriefcaseIcon,
   AcademicCapIcon,
@@ -20,7 +17,6 @@ import {
   SiAmazonaws as AWSIcon,
 } from 'react-icons/si';
 import {
-  TbBrandCpp as CppIcon,
   TbBrandTypescript as TypeScriptIcon,
   TbBrandJavascript as JavascriptIcon,
   TbBrandPython as PythonIcon,
@@ -37,24 +33,6 @@ import {
 } from 'react-icons/bi';
 
 function Home() {
-  const medias = [
-    {
-      svg: LinkedInLogo,
-      url: 'https://www.linkedin.com/in/mateuseliasdeandradepereira/',
-      alt: 'Logo do LinkedIn',
-    },
-    {
-      svg: GitHubLogo,
-      url: 'https://github.com/mateuseap',
-      alt: 'Logo do GitHub',
-    },
-    {
-      svg: InstagramLogo,
-      url: 'https://www.instagram.com/mateuseap/',
-      alt: 'Logo do Instagram',
-    },
-  ];
-
   const profilePicture = 'https://avatars.githubusercontent.com/u/52019009';
 
   const usedProgrammingLanguages: Array<TechnologyCardProps> = [
