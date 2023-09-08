@@ -13,7 +13,7 @@ function TechnologyCard({ name, Icon = undefined }: TechnologyCardProps) {
         'h-22 flex flex-col items-center justify-center space-y-2 font-semibold',
         'rounded-lg border-[1px] border-none bg-white/5 p-4 text-sm',
         'rounded-md shadow-md',
-        'hover:shadow-white active:translate-y-[2px]',
+        'hover:shadow-[#b0b0b0] active:translate-y-[2px]',
         'transition-all duration-300 ease-out',
       )}
     >
