@@ -27,13 +27,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. T
 
 ## 🧙‍♂️ Useful commands
 
-#### $\textcolor{blue}{\textsf{Build the project:}}$
+Build the project:
 
 ```bash
 npm run build
 ```
 
-#### $\textcolor{blue}{\textsf{Commit build folder to}}$ $\textcolor{green}{\textsf{gh-pages}}$ $\textcolor{blue}{\textsf{branch:}}$
+Commit build folder to ``gh-pages`` branch:
 
 ```bash
 npm run deploy
