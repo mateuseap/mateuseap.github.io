@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 
-type LinkProps = {
+export interface LinkProps {
   to: string;
   leftIcon?: React.ReactElement;
   rightIcon?: React.ReactElement;
