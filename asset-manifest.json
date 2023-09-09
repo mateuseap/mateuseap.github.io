@@ -1,19 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b252bf19.css",
-    "main.js": "/static/js/main.1cf03804.js",
-    "static/media/frog-ninja.png": "/static/media/frog-ninja.ac7a2ba5ec42c6d8a093.png",
+    "main.css": "/static/css/main.126faeb7.css",
+    "main.js": "/static/js/main.e7a78588.js",
     "static/media/Satoshi.woff2": "/static/media/Satoshi.353a66cdd8922bb63107.woff2",
-    "static/media/profile-pic.jpg": "/static/media/profile-pic.3ad1dae1616875eff5c0.jpg",
-    "static/media/2048.png": "/static/media/2048.861bfb0039e0cd73288f.png",
-    "static/media/palavrinha.png": "/static/media/palavrinha.330d0cfebf63b0c55c36.png",
-    "static/media/github-logo.svg": "/static/media/github-logo.86cb98471c70e70a794c2113f04a0f7c.svg",
     "index.html": "/index.html",
-    "main.b252bf19.css.map": "/static/css/main.b252bf19.css.map",
-    "main.1cf03804.js.map": "/static/js/main.1cf03804.js.map"
+    "main.126faeb7.css.map": "/static/css/main.126faeb7.css.map",
+    "main.e7a78588.js.map": "/static/js/main.e7a78588.js.map"
   },
   "entrypoints": [
-    "static/css/main.b252bf19.css",
-    "static/js/main.1cf03804.js"
+    "static/css/main.126faeb7.css",
+    "static/js/main.e7a78588.js"
   ]
 }
