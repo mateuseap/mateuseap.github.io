@@ -3,21 +3,6 @@ import Link from '../Link/Link';
 import { BiMailSend, BiSolidFileArchive } from 'react-icons/bi';
 
 function Footer() {
-  const footerItems = [
-    {
-      name: 'LinkedIn',
-      url: '',
-    },
-    {
-      name: 'GitHub',
-      url: '',
-    },
-    {
-      name: 'Medium',
-      url: '',
-    },
-  ];
-
   const firstColumnItems = [
     {
       url: 'https://www.linkedin.com/in/mateuseliasdeandradepereira/',
