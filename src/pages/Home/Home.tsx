@@ -31,11 +31,16 @@ import {
   BiLogoJava as JavaIcon,
   BiLogoGoogleCloud as GoogleCloudIcon,
 } from 'react-icons/bi';
-import { AiFillGithub as GitHubIcon } from 'react-icons/ai';
+import {
+  AiFillGithub as GitHubIcon,
+  AiFillLinkedin as LinkedInIcon,
+  AiFillMediumSquare as MediumIcon,
+} from 'react-icons/ai';
 import ProjectCard, {
   ProjectCardProps,
 } from '../../components/ProjectCard/ProjectCard';
 import clsx from 'clsx';
+import Link from '../../components/Link/Link';
 
 function Home() {
   const profilePicture = 'https://avatars.githubusercontent.com/u/52019009';
@@ -203,11 +208,37 @@ function Home() {
       thumbnail:
         'https://raw.githubusercontent.com/mateuseap/palavrinha/main/public/favicon.png',
     },
-  ];  
+  ];
+
+  const socialMedias = [
+    {
+      url: 'https://www.linkedin.com/in/mateuseliasdeandradepereira/',
+      Icon: LinkedInIcon,
+    },
+    {
+      url: 'https://github.com/mateuseap',
+      Icon: GitHubIcon,
+    },
+    {
+      url: 'https://medium.com/@mateuselias',
+      Icon: MediumIcon,
+    },
+  ];
 
   return (
     <DefaultPage>
       <main className='flex flex-col mx-auto min-h-screen max-w-[720px] px-4 pt-20 gap-y-6'>
+        <div className='w-full flex items-center sm:justify-end gap-x-2'>
+          {socialMedias.map(({ url, Icon }) => (
+            <Link
+              to={url}
+              external
+              rightIcon={<Icon size={34} />}
+              size='lg'
+              className='w-fit font-semibold'
+            />
+          ))}
+        </div>
         <div className='h-full w-full flex justify-center sm:justify-start items-center text-3xl gap-x-4 font-medium'>
           <img
             src={profilePicture}
@@ -288,7 +319,7 @@ function Home() {
             </p>
           </div>
         </section>
-        <div className='mt-5 border-[#909090] border-t'/>
+        <div className='mt-5 border-[#909090] border-t' />
         <div className='mt-5 mb-20 text-center'>
           Portfolio still under development...
         </div>
