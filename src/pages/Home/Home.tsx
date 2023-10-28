@@ -41,6 +41,7 @@ import ProjectCard, {
 } from '../../components/ProjectCard/ProjectCard';
 import clsx from 'clsx';
 import Link from '../../components/Link/Link';
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
   const profilePicture = 'https://avatars.githubusercontent.com/u/52019009';
@@ -319,10 +320,7 @@ function Home() {
             </p>
           </div>
         </section>
-        <div className='mt-5 border-[#909090] border-t' />
-        <div className='mt-5 mb-20 text-center'>
-          Portfolio still under development...
-        </div>
+        <Footer />
       </main>
     </DefaultPage>
   );
