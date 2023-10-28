@@ -142,14 +142,25 @@ function Home() {
         'https://raw.githubusercontent.com/mateuseap/2048/28222bcbf6ca60b7ac9ba8536b79ad211439210e/logo.svg',
     },
     {
-      name: 'Palavrinha',
+      name: 'Chess',
+      description: 'The classic chess game.',
+      githubRepoUrl: 'https://github.com/mateuseap/chess/',
+      technologiesUsed: ['Python', 'Pygame'],
+      thumbnail: 'https://i.imgur.com/dzr9Dlo.png',
+    },
+    {
+      name: 'FestaLab Challenge',
       description:
-        'A fun word-guessing game inspired by Wordle, designed for Portuguese speakers.',
-      githubRepoUrl: 'https://github.com/mateuseap/palavrinha/',
-      deployedAppUrl: 'https://www.mateuseap.com/palavrinha/',
-      technologiesUsed: ['JavaScript', 'React'],
+        'A user management dashboard with registration, editing, deletion, listing, pagination, and search functionalities.',
+      githubRepoUrl: 'https://github.com/mateuseap/festalab-challenge',
+      technologiesUsed: [
+        'Ruby on Rails',
+        'PostgreSQL',
+        'TailwindCSS',
+        'Docker',
+      ],
       thumbnail:
-        'https://raw.githubusercontent.com/mateuseap/palavrinha/main/public/favicon.png',
+        'https://raw.githubusercontent.com/mateuseap/festalab-challenge/main/public/favicon.ico',
     },
     {
       name: 'Frog Ninja',
@@ -183,13 +194,16 @@ function Home() {
         'https://raw.githubusercontent.com/mateuseap/Oncase-Challenge/main/front-end/public/logo-icon.png',
     },
     {
-      name: 'Chess',
-      description: 'The classic chess game.',
-      githubRepoUrl: 'https://github.com/mateuseap/chess/',
-      technologiesUsed: ['Python', 'Pygame'],
-      thumbnail: 'https://i.imgur.com/dzr9Dlo.png',
+      name: 'Palavrinha',
+      description:
+        'A fun word-guessing game inspired by Wordle, designed for Portuguese speakers.',
+      githubRepoUrl: 'https://github.com/mateuseap/palavrinha/',
+      deployedAppUrl: 'https://www.mateuseap.com/palavrinha/',
+      technologiesUsed: ['JavaScript', 'React'],
+      thumbnail:
+        'https://raw.githubusercontent.com/mateuseap/palavrinha/main/public/favicon.png',
     },
-  ];
+  ];  
 
   return (
     <DefaultPage>
@@ -217,7 +231,7 @@ function Home() {
         <div className='h-full w-full flex flex-col sm:flex-row gap-x-4 text-xs font-medium text-[#b0b0b0] border-[#909090] border-t border-b items-center justify-center pt-2 pb-2'>
           <div className='flex gap-x-1 items-center'>
             <BriefcaseIcon className='h-5 w-5' />
-            <div>Software Engineer Trainee II @ Oncase</div>
+            <div>Full Stack Software Engineer Trainee II @ Oncase</div>
           </div>
           <div className='flex gap-x-1 items-center'>
             <AcademicCapIcon className='h-5 w-5' />
@@ -225,7 +239,7 @@ function Home() {
           </div>
           <div className='flex gap-x-1 items-center'>
             <MapPinIcon className='h-5 w-5' />
-            <div>Pernambuco - Brazil</div>
+            <div>PE - Brazil</div>
           </div>
         </div>
         <section className='mt-2'>
