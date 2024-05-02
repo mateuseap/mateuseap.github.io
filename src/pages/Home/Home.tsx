@@ -15,6 +15,7 @@ import {
   SiPostgresql as PostgreSQLIcon,
   SiFlask as FlaskIcon,
   SiAmazonaws as AWSIcon,
+  SiRubyonrails as RubyOnRailsIcon,
 } from 'react-icons/si';
 import {
   TbBrandTypescript as TypeScriptIcon,
@@ -35,6 +36,7 @@ import {
   AiFillGithub as GitHubIcon,
   AiFillLinkedin as LinkedInIcon,
   AiFillMediumSquare as MediumIcon,
+  AiOutlineRuby as RubyIcon
 } from 'react-icons/ai';
 import ProjectCard, {
   ProjectCardProps,
@@ -73,6 +75,10 @@ function Home() {
       name: 'Haskell',
       Icon: HaskellIcon,
     },
+    {
+      name: 'Ruby',
+      Icon: RubyIcon,
+    },
   ];
 
   const usedFrameworksAndTechnologies: Array<TechnologyCardProps> = [
@@ -87,6 +93,10 @@ function Home() {
     {
       name: 'React',
       Icon: ReactIcon,
+    },
+    {
+      name: 'Ruby on Rails',
+      Icon: RubyOnRailsIcon,
     },
     {
       name: 'NestJS',
