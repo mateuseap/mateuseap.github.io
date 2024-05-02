@@ -15,6 +15,7 @@ import {
   SiPostgresql as PostgreSQLIcon,
   SiFlask as FlaskIcon,
   SiAmazonaws as AWSIcon,
+  SiRubyonrails as RubyOnRailsIcon,
 } from 'react-icons/si';
 import {
   TbBrandTypescript as TypeScriptIcon,
@@ -35,6 +36,7 @@ import {
   AiFillGithub as GitHubIcon,
   AiFillLinkedin as LinkedInIcon,
   AiFillMediumSquare as MediumIcon,
+  AiOutlineRuby as RubyIcon,
 } from 'react-icons/ai';
 import ProjectCard, {
   ProjectCardProps,
@@ -73,6 +75,10 @@ function Home() {
       name: 'Haskell',
       Icon: HaskellIcon,
     },
+    {
+      name: 'Ruby',
+      Icon: RubyIcon,
+    },
   ];
 
   const usedFrameworksAndTechnologies: Array<TechnologyCardProps> = [
@@ -87,6 +93,10 @@ function Home() {
     {
       name: 'React',
       Icon: ReactIcon,
+    },
+    {
+      name: 'Ruby on Rails',
+      Icon: RubyOnRailsIcon,
     },
     {
       name: 'NestJS',
@@ -263,7 +273,7 @@ function Home() {
         <div className='h-full w-full flex flex-col sm:flex-row gap-x-4 text-xs font-medium text-[#b0b0b0] border-[#909090] border-t border-b items-center justify-center pt-2 pb-2'>
           <div className='flex gap-x-1 items-center'>
             <BriefcaseIcon className='h-5 w-5' />
-            <div>Full Stack Software Engineer Trainee @ FestaLab</div>
+            <div>Full Stack Software Engineer Junior @ FestaLab</div>
           </div>
           <div className='flex gap-x-1 items-center'>
             <AcademicCapIcon className='h-5 w-5' />
