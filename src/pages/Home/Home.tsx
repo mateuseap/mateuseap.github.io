@@ -263,7 +263,7 @@ function Home() {
         <div className='h-full w-full flex flex-col sm:flex-row gap-x-4 text-xs font-medium text-[#b0b0b0] border-[#909090] border-t border-b items-center justify-center pt-2 pb-2'>
           <div className='flex gap-x-1 items-center'>
             <BriefcaseIcon className='h-5 w-5' />
-            <div>Full Stack Software Engineer Trainee @ FestaLab</div>
+            <div>Full Stack Software Engineer Junior @ FestaLab</div>
           </div>
           <div className='flex gap-x-1 items-center'>
             <AcademicCapIcon className='h-5 w-5' />
