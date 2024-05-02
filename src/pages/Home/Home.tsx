@@ -38,6 +38,9 @@ import {
   AiFillMediumSquare as MediumIcon,
   AiOutlineRuby as RubyIcon,
 } from 'react-icons/ai';
+import { 
+  DiRuby as RubyIcon,
+} from "react-icons/di";
 import ProjectCard, {
   ProjectCardProps,
 } from '../../components/ProjectCard/ProjectCard';
