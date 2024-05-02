@@ -36,7 +36,7 @@ import {
   AiFillGithub as GitHubIcon,
   AiFillLinkedin as LinkedInIcon,
   AiFillMediumSquare as MediumIcon,
-  AiOutlineRuby as RubyIcon
+  AiOutlineRuby as RubyIcon,
 } from 'react-icons/ai';
 import ProjectCard, {
   ProjectCardProps,
