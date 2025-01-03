@@ -3,11 +3,7 @@ import { useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useWindowSize } from 'react-use';
 import { StarField } from 'starfield-react';
-
-export interface StarfieldProps {
-  speed?: number;
-  className?: string;
-}
+import type { StarfieldProps } from '../../types';
 
 function Starfield({ speed = 0.5, className = '' }: StarfieldProps) {
   const { width, height } = useWindowSize();

@@ -1,13 +1,5 @@
-import { ReactNode } from 'react';
 import Starfield from '../../components/Starfield/Starfield';
-
-export interface DefaultPageProps {
-  className?: string;
-  childrenClassName?: string;
-  children?: ReactNode;
-  HtmlTag?: keyof JSX.IntrinsicElements;
-  starfield?: boolean;
-}
+import type { DefaultPageProps } from '../../types';
 
 function DefaultPage({
   className = 'flex',

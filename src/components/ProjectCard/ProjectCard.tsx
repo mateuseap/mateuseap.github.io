@@ -1,16 +1,8 @@
 import clsx from 'clsx';
-import Link from '../../components/Link/Link';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
-
-export interface ProjectCardProps {
-  name: string;
-  description: string;
-  githubRepoUrl?: string;
-  deployedAppUrl?: string;
-  technologiesUsed: Array<string>;
-  thumbnail: string;
-}
+import Link from '../../components/Link/Link';
+import type { ProjectCardProps } from '../../types';
 
 function ProjectCard({
   name,

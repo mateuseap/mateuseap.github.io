@@ -1,10 +1,5 @@
 import clsx from 'clsx';
-import { type IconType } from 'react-icons';
-
-export interface TechnologyCardProps {
-    name: string;
-    Icon?: IconType | undefined;
-}
+import type { TechnologyCardProps } from '../../types';
 
 function TechnologyCard({ name, Icon = undefined }: TechnologyCardProps) {
   return (
@@ -21,6 +16,6 @@ function TechnologyCard({ name, Icon = undefined }: TechnologyCardProps) {
       <span className='whitespace-nowrap'>{name}</span>
     </div>
   );
-};
+}
 
 export default TechnologyCard;

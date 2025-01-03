@@ -1,6 +1,6 @@
 import clsx from 'clsx';
-import Link from '../Link/Link';
 import { BiMailSend, BiSolidFileArchive } from 'react-icons/bi';
+import Link from '../Link/Link';
 
 function Footer() {
   const firstColumnItems = [
