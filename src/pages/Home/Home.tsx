@@ -11,9 +11,8 @@ import {
   AcademicCapIcon,
   MapPinIcon,
 } from '@heroicons/react/24/outline';
-import TechnologyCard, {
-  TechnologyCardProps,
-} from '../../components/TechnologyCard/TechnologyCard';
+import TechnologyCard from '../../components/TechnologyCard/TechnologyCard';
+import type { TechnologyCardProps } from '../../types';
 import { AiFillGithub as GitHubIcon } from 'react-icons/ai';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import clsx from 'clsx';

@@ -30,8 +30,7 @@ import {
 } from 'react-icons/ai';
 import { DiRuby as RubyIcon } from 'react-icons/di';
 import { FaBlogger as BlogIcon } from 'react-icons/fa';
-import { TechnologyCardProps } from '../components/TechnologyCard/TechnologyCard';
-import { ProjectCardProps } from '../components/ProjectCard/ProjectCard';
+import type { TechnologyCardProps, ProjectCardProps } from '../types';
 
 export const PROFILE_PICTURE_URL =
   'https://avatars.githubusercontent.com/u/52019009';

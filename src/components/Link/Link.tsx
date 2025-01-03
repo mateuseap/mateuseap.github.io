@@ -1,16 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-
-export interface LinkProps {
-  to: string;
-  leftIcon?: React.ReactElement;
-  rightIcon?: React.ReactElement;
-  size?: 'sm' | 'base' | 'lg' | 'xl';
-  variant?: 'primary' | 'link' | 'icon-button';
-  children?: React.ReactNode;
-  external?: boolean;
-  className?: string;
-};
+import type { LinkProps } from '../../types';
 
 function Link({
   to,
