@@ -16,6 +16,6 @@ function TechnologyCard({ name, Icon = undefined }: TechnologyCardProps) {
       <span className='whitespace-nowrap'>{name}</span>
     </div>
   );
-};
+}
 
 export default TechnologyCard;

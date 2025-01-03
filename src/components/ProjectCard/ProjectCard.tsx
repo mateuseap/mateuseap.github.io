@@ -1,7 +1,7 @@
 import clsx from 'clsx';
-import Link from '../../components/Link/Link';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
+import Link from '../../components/Link/Link';
 import type { ProjectCardProps } from '../../types';
 
 function ProjectCard({

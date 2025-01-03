@@ -1,3 +1,10 @@
+import { AiFillGithub as GitHubIcon } from 'react-icons/ai';
+import {
+  BriefcaseIcon,
+  AcademicCapIcon,
+  MapPinIcon,
+} from '@heroicons/react/24/outline';
+import clsx from 'clsx';
 import {
   PROFILE_PICTURE_URL,
   PROGRAMMING_LANGUAGES,
@@ -5,17 +12,10 @@ import {
   PROJECTS,
   SOCIAL_MEDIAS,
 } from '../../constants';
-import DefaultPage from '../../components/DefaultPage/DefaultPage';
-import {
-  BriefcaseIcon,
-  AcademicCapIcon,
-  MapPinIcon,
-} from '@heroicons/react/24/outline';
-import TechnologyCard from '../../components/TechnologyCard/TechnologyCard';
 import type { TechnologyCardProps } from '../../types';
-import { AiFillGithub as GitHubIcon } from 'react-icons/ai';
+import DefaultPage from '../../components/DefaultPage/DefaultPage';
+import TechnologyCard from '../../components/TechnologyCard/TechnologyCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
-import clsx from 'clsx';
 import Link from '../../components/Link/Link';
 import Footer from '../../components/Footer/Footer';
 
@@ -81,11 +81,9 @@ function Home() {
           <div className='mt-6'>
             <p className='text-sm font-normal'>Frameworks / Technologies</p>
             <div className='mt-3 grid grid-cols-3 gap-2 sm:grid-cols-5'>
-              {FRAMEWORKS_AND_TECHNOLOGIES.map(
-                (tech: TechnologyCardProps) => (
-                  <TechnologyCard key={tech.name} {...tech} />
-                ),
-              )}
+              {FRAMEWORKS_AND_TECHNOLOGIES.map((tech: TechnologyCardProps) => (
+                <TechnologyCard key={tech.name} {...tech} />
+              ))}
             </div>
           </div>
         </section>
