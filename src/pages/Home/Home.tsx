@@ -37,9 +37,8 @@ import {
   AiFillLinkedin as LinkedInIcon,
   AiFillMediumSquare as MediumIcon,
 } from 'react-icons/ai';
-import { 
-  DiRuby as RubyIcon,
-} from "react-icons/di";
+import { FaBlogger as BlogIcon } from 'react-icons/fa';
+import { DiRuby as RubyIcon } from 'react-icons/di';
 import ProjectCard, {
   ProjectCardProps,
 } from '../../components/ProjectCard/ProjectCard';
@@ -235,6 +234,10 @@ function Home() {
     {
       url: 'https://medium.com/@mateuselias',
       Icon: MediumIcon,
+    },
+    {
+      url: 'https://mateuseap.blog/',
+      Icon: BlogIcon,
     },
   ];
 
