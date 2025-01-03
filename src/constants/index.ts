@@ -29,7 +29,6 @@ import {
   AiFillMediumSquare as MediumIcon,
 } from 'react-icons/ai';
 import { DiRuby as RubyIcon } from 'react-icons/di';
-import { FaBlogger as BlogIcon } from 'react-icons/fa';
 import type { TechnologyCardProps, ProjectCardProps } from '../types';
 
 export const PROFILE_PICTURE_URL =
@@ -215,9 +214,5 @@ export const SOCIAL_MEDIAS = [
   {
     url: 'https://medium.com/@mateuselias',
     Icon: MediumIcon,
-  },
-  {
-    url: 'https://mateuseap.blog/',
-    Icon: BlogIcon,
   },
 ];

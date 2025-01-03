@@ -33,6 +33,14 @@ function Home() {
               className='w-fit font-semibold'
             />
           ))}
+          <a
+            href='https://mateuseap.blog/'
+            className='font-semibold text-lg'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Blog
+          </a>
         </div>
         <div className='h-full w-full flex justify-center sm:justify-start items-center text-3xl gap-x-4 font-medium'>
           <img
