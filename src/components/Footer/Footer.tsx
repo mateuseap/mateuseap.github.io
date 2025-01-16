@@ -54,7 +54,7 @@ function Footer() {
           </div>
           <div className='flex flex-col items-start gap-4'>
             <a
-              href='mailto:meap@cin.ufpe.br'
+              href='mailto:mateuseap@mateuseap.com'
               className={clsx(
                 'flex items-center gap-2 rounded-md bg-rose-100/30 p-2 font-semibold w-full',
                 'shadow-md transition-all duration-300 ease-out',
