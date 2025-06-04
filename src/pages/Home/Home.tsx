@@ -34,7 +34,7 @@ function Home() {
             />
           ))}
           <a
-            href='https://mateuseap.blog/'
+            href='https://mateuseap.space/'
             className='font-semibold text-lg'
             target='_blank'
             rel='noopener noreferrer'
