@@ -7,6 +7,8 @@ import {
   SiFlask as FlaskIcon,
   SiAmazonaws as AWSIcon,
   SiRubyonrails as RubyOnRailsIcon,
+  SiGrafana as GrafanaIcon,
+  SiApacheairflow as ApacheAirflowIcon,
 } from 'react-icons/si';
 import {
   TbBrandTypescript as TypeScriptIcon,
@@ -130,6 +132,14 @@ export const FRAMEWORKS_AND_TECHNOLOGIES: Array<TechnologyCardProps> = [
     name: 'GCP',
     Icon: GoogleCloudIcon,
   },
+  {
+    name: "Grafana",
+    Icon: GrafanaIcon,
+  },
+  {
+    name: "Apache Airflow",
+    Icon: ApacheAirflowIcon,
+  }
 ];
 
 export const PROJECTS: Array<ProjectCardProps> = [
@@ -189,6 +199,16 @@ export const PROJECTS: Array<ProjectCardProps> = [
     ],
     thumbnail:
       'https://raw.githubusercontent.com/mateuseap/Oncase-Challenge/main/front-end/public/logo-icon.png',
+  },
+  {
+    name: 'Domino',
+    description:
+      'A real-time multiplayer Domino game, for two players, built with React and Flask-SocketIO.',
+    githubRepoUrl: 'https://github.com/mateuseap/domino/',
+    deployedAppUrl: 'https://domino-lovat.vercel.app/',
+    technologiesUsed: ['JavaScript', 'React', 'Python', 'Flask', 'Flask-SocketIO'],
+    thumbnail:
+      'https://i.imgur.com/wEZh4Qf.png',
   },
   {
     name: 'Palavrinha',
