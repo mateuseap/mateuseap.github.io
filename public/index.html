@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="icon" href="logo-icon.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <title>Mateus Elias</title>
+
+    <!-- Set the theme before first paint to avoid a flash of the wrong theme. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia(
+            '(prefers-color-scheme: dark)'
+          ).matches;
+          var theme = stored || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+
+    <title>Mateus Elias | Full Stack Software Engineer</title>
+    <meta
+      name="description"
+      content="Mateus Elias is a full stack software engineer building web platforms and self-hosted GitOps infrastructure with TypeScript, React, NestJS, Kubernetes and ArgoCD."
+    />
+    <meta name="author" content="Mateus Elias" />
+    <link rel="canonical" href="https://www.mateuseap.com/" />
+
+    <meta
+      name="theme-color"
+      content="#f4f7f6"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#101715"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo-icon.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mateus Elias" />
+    <meta
+      property="og:title"
+      content="Mateus Elias | Full Stack Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Full stack software engineer building web platforms and self-hosted GitOps infrastructure with TypeScript, React, NestJS, Kubernetes and ArgoCD."
+    />
+    <meta property="og:url" content="https://www.mateuseap.com/" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/52019009?v=4"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Mateus Elias | Full Stack Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full stack software engineer building web platforms and self-hosted GitOps infrastructure with TypeScript, React, NestJS, Kubernetes and ArgoCD."
+    />
+    <meta
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/52019009?v=4"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mateus Elias",
+        "alternateName": "mateuseap",
+        "url": "https://www.mateuseap.com/",
+        "image": "https://avatars.githubusercontent.com/u/52019009?v=4",
+        "jobTitle": "Full Stack Software Engineer",
+        "sameAs": [
+          "https://github.com/mateuseap",
+          "https://www.linkedin.com/in/mateuseliasdeandradepereira/",
+          "https://medium.com/@mateuselias",
+          "https://blog.mateuseap.com"
+        ]
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
