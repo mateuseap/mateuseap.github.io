@@ -5,15 +5,17 @@ function TechnologyCard({ name, Icon = undefined }: TechnologyCardProps) {
   return (
     <div
       className={clsx(
-        'h-22 flex flex-col items-center justify-center space-y-2 font-semibold',
-        'rounded-lg border-[1px] border-none bg-white/5 p-4 text-sm',
-        'rounded-md shadow-md',
-        'hover:shadow-[#b0b0b0] active:translate-y-[2px]',
+        'flex flex-col items-center justify-center space-y-2 font-semibold',
+        'rounded-md border p-4 text-sm shadow-sm',
+        'border-line bg-black/[0.02] text-ink',
+        'dark:border-line-dark dark:bg-white/5 dark:text-ink-dark',
+        'hover:border-accent/60 hover:text-accent active:translate-y-[2px]',
+        'dark:hover:border-accent-dark/60 dark:hover:text-accent-dark',
         'transition-all duration-300 ease-out',
       )}
     >
-      {Icon && <Icon size={24} />}
-      <span className='whitespace-nowrap'>{name}</span>
+      {Icon && <Icon size={24} className='shrink-0' />}
+      <span className='min-w-0 text-center leading-tight'>{name}</span>
     </div>
   );
 }

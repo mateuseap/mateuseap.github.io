@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['selector', '[data-theme="dark"]'],
+  darkMode: ['class', '[data-theme="dark"]'],
   content: [
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
     './index.html',
