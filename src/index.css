@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Theme tokens. Light is the default; [data-theme="dark"] overrides. */
+:root {
+  --bg: #f4f7f6;
+  --ink: #131d1a;
+  --scrollbar-track: #e6ebe9;
+  --scrollbar-thumb: #c3ccc8;
+}
+
+:root[data-theme='dark'] {
+  --bg: #101715;
+  --ink: #e3ece9;
+  --scrollbar-track: #1b2420;
+  --scrollbar-thumb: #2a3733;
+}
+
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -10,7 +25,7 @@
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 8px;
-  background: #eeeeee;
+  background: var(--scrollbar-track);
 }
 
 *::-webkit-scrollbar-track {
@@ -18,20 +33,34 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #dfdfdf;
+  background-color: var(--scrollbar-thumb);
   border-radius: 14px;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('../public/fonts/Satoshi.woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
 }
 
 @layer base {
   html {
-    background-color: #121212;
-    color: #FFFF;
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+      sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

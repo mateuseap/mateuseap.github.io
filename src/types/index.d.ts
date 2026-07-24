@@ -21,12 +21,13 @@ export interface LinkProps {
 }
 
 export interface ProjectCardProps {
+  id: string;
   name: string;
-  description: string;
+  description?: string;
   githubRepoUrl?: string;
   deployedAppUrl?: string;
   technologiesUsed: Array<string>;
-  thumbnail: string;
+  thumbnail?: string;
 }
 
 export interface StarfieldProps {

@@ -1,0 +1,43 @@
+{
+  "header": {
+    "blog": "Blog",
+    "toggleThemeToDark": "Switch to dark theme",
+    "toggleThemeToLight": "Switch to light theme",
+    "changeLanguage": "Change language"
+  },
+  "hero": {
+    "bio": "Passionate about coding and committed to using technology to assist and empower others, I actively seek out opportunities to collaborate and innovate.",
+    "role": "Full Stack Software Engineer @ FestaLab",
+    "education": "B.Sc. Student of Computer Science @ CIn/UFPE",
+    "location": "Pernambuco, Brazil"
+  },
+  "skills": {
+    "title": "My Skills",
+    "core": "Core Development",
+    "platform": "Platform & DevOps"
+  },
+  "projects": {
+    "title": "My Projects",
+    "live": "Live",
+    "code": "Code",
+    "seeMore": "See more of my projects at",
+    "items": {
+      "homelab": "Self-hosted GitOps platform running k3s on a single VPS, with declarative ArgoCD deployments and end-to-end observability.",
+      "chesskernel": "Real-time multiplayer chess platform with live games, matchmaking and Stockfish-powered analysis.",
+      "pixelhub": "Gather-style 2D virtual world where players move around a map and talk through proximity-based voice chat.",
+      "2048": "My rendition of the classic single-player sliding tile puzzle game.",
+      "chess": "The classic chess game, built from scratch in Python.",
+      "festalab": "A user management dashboard with registration, editing, deletion, listing, pagination and search.",
+      "frogNinja": "An engaging 2D platformer featuring a frog, packed with jumps, obstacles and surprises.",
+      "oncase": "A web application for managing user data and presenting it through an interactive dashboard.",
+      "domino": "A real-time multiplayer Domino game for two players, built with React and Flask-SocketIO.",
+      "palavrinha": "A word-guessing game inspired by Wordle, designed for Portuguese speakers."
+    }
+  },
+  "footer": {
+    "connect": "Connect",
+    "getInTouch": "Get in touch",
+    "contact": "Contact me",
+    "cv": "View my CV"
+  }
+}
