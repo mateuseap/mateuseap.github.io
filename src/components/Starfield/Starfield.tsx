@@ -23,7 +23,7 @@ function Starfield({
     <div
       aria-hidden='true'
       className={clsx(
-        'pointer-events-none fixed left-0 top-0 -z-10 h-full w-full select-none overflow-hidden opacity-60',
+        'pointer-events-none fixed left-0 top-0 -z-10 h-full w-full select-none overflow-hidden opacity-100',
         className,
       )}
     >
