@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#232936"/>
+      <stop offset="1" stop-color="#171b24"/>
+    </linearGradient>
+    <linearGradient id="pawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8cc5c"/>
+      <stop offset="1" stop-color="#5ba3b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- pawn: head, collar, body, base -->
+  <circle cx="32" cy="21" r="8.5" fill="url(#pawn)"/>
+  <rect x="24" y="30" width="16" height="4" rx="2" fill="url(#pawn)"/>
+  <path d="M28 34 h8 l3.5 12 h-15 z" fill="url(#pawn)"/>
+  <rect x="20" y="47" width="24" height="6" rx="3" fill="url(#pawn)"/>
+</svg>
