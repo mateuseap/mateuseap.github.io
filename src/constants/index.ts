@@ -100,7 +100,7 @@ export const PLATFORM_AND_DEVOPS: Array<TechnologyCardProps> = [
 export const PROJECTS: Array<ProjectCardProps> = [
   {
     id: 'homelab',
-    name: 'Homelab',
+    name: 'HomeLab',
     githubRepoUrl: 'https://github.com/mateuseap/homelab',
     deployedAppUrl: 'https://homelab.mateuseap.com',
     technologiesUsed: [
