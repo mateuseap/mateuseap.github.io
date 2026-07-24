@@ -13,7 +13,7 @@ function DefaultPage({
 
   // Stars are near-white on the dark background and a soft teal on light, so the
   // effect reads on both themes without washing out the foreground text.
-  const starColor = theme === 'dark' ? '#8fa39c' : '#0f7a63';
+  const starColor = theme === 'dark' ? '#0f7a63' : '#000000';
 
   return (
     <HtmlTag className={className}>
