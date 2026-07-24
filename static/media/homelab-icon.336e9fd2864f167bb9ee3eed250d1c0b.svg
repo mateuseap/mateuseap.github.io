@@ -1,0 +1,8 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HomeLab: single node running multiple apps">
+  <rect width="64" height="64" rx="15" fill="#0f7a63" />
+  <line x1="32" y1="25" x2="18" y2="46" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" />
+  <line x1="32" y1="25" x2="46" y2="46" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" />
+  <circle cx="18" cy="46" r="5.5" fill="#ffffff" />
+  <circle cx="46" cy="46" r="5.5" fill="#ffffff" />
+  <circle cx="32" cy="24" r="8.5" fill="#ffffff" />
+</svg>
