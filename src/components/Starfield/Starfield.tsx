@@ -5,7 +5,11 @@ import { useWindowSize } from 'react-use';
 import { StarField } from 'starfield-react';
 import type { StarfieldProps } from '../../types';
 
-function Starfield({ speed = 0.5, className = '' }: StarfieldProps) {
+function Starfield({
+  speed = 0.5,
+  className = '',
+  color = '#ffffff',
+}: StarfieldProps) {
   const { width, height } = useWindowSize();
   const [mounted, setMounted] = useState(false);
 
@@ -19,7 +23,7 @@ function Starfield({ speed = 0.5, className = '' }: StarfieldProps) {
     <div
       aria-hidden='true'
       className={clsx(
-        'pointer-events-none fixed left-0 top-0 -z-10 h-full w-full select-none overflow-hidden',
+        'pointer-events-none fixed left-0 top-0 -z-10 h-full w-full select-none overflow-hidden opacity-60',
         className,
       )}
     >
@@ -29,6 +33,7 @@ function Starfield({ speed = 0.5, className = '' }: StarfieldProps) {
           width={width}
           height={height}
           speed={shouldReduceMotion ? 0 : speed}
+          starStyle={color}
           noBackground
         />
       )}

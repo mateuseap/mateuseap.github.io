@@ -33,6 +33,7 @@ export interface ProjectCardProps {
 export interface StarfieldProps {
   speed?: number;
   className?: string;
+  color?: string;
 }
 
 export interface TechnologyCardProps {

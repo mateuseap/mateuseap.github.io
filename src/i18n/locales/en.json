@@ -13,7 +13,8 @@
   },
   "skills": {
     "title": "My Skills",
-    "core": "Core Development",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Technologies",
     "platform": "Platform & DevOps"
   },
   "projects": {

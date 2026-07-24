@@ -20,7 +20,11 @@ function Header() {
       <div className='mx-auto flex max-w-[720px] items-center justify-between gap-x-3 px-4 py-3'>
         <a
           href='#top'
-          className='flex items-center gap-x-2 font-semibold'
+          className={clsx(
+            'flex items-center gap-x-2 font-semibold text-ink dark:text-ink-dark',
+            'transition-colors duration-300 ease-out',
+            'hover:text-accent dark:hover:text-accent-dark',
+          )}
           aria-label='mateuseap'
         >
           <Logo size={32} />

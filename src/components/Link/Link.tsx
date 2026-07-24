@@ -19,9 +19,10 @@ function Link({
   ) =>
     React.cloneElement(icon, {
       className: clsx(
-        'bg-rose-100/30 p-1',
-        'shadow-md rounded-md',
-        'group-hover:scale-[1.2] group-hover:shadow-[#b0b0b0] group-active:translate-y-[2px]',
+        'bg-accent/10 text-accent p-1',
+        'dark:bg-white/10 dark:text-accent-dark',
+        'shadow-sm rounded-md',
+        'group-hover:scale-[1.2] group-active:translate-y-[2px]',
         'transition-all duration-300 ease-out',
       ),
       size: size === 'sm' ? 24 : 32,
