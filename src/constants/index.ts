@@ -1,26 +1,48 @@
 import {
+  SiHaskell as HaskellIcon,
+  SiNestjs as NestJSIcon,
+  SiLinux as LinuxIcon,
+  SiJest as JestIcon,
+  SiPostgresql as PostgreSQLIcon,
+  SiFlask as FlaskIcon,
+  SiAmazonaws as AWSIcon,
+  SiRubyonrails as RubyOnRailsIcon,
+  SiRedis as RedisIcon,
+  SiNodedotjs as NodeIcon,
   SiKubernetes as KubernetesIcon,
   SiArgo as ArgoIcon,
-  SiDocker as DockerIcon,
   SiPrometheus as PrometheusIcon,
   SiGrafana as GrafanaIcon,
   SiTraefikproxy as TraefikIcon,
   SiTerraform as TerraformIcon,
-  SiTypescript as TypeScriptIcon,
-  SiReact as ReactIcon,
-  SiNodedotjs as NodeIcon,
-  SiNestjs as NestJSIcon,
-  SiPostgresql as PostgreSQLIcon,
-  SiRedis as RedisIcon,
   SiGithubactions as GitHubActionsIcon,
 } from 'react-icons/si';
-import { TbCertificate as CertManagerIcon } from 'react-icons/tb';
+import {
+  TbBrandTypescript as TypeScriptIcon,
+  TbBrandJavascript as JavascriptIcon,
+  TbBrandPython as PythonIcon,
+  TbBrandHtml5 as Html5Icon,
+  TbBrandCss3 as Css3Icon,
+  TbBrandReact as ReactIcon,
+  TbBrandGit as GitIcon,
+  TbBrandDocker as DockerIcon,
+  TbBrandDjango as DjangoIcon,
+  TbCertificate as CertManagerIcon,
+} from 'react-icons/tb';
+import {
+  BiLogoJava as JavaIcon,
+  BiLogoGoogleCloud as GoogleCloudIcon,
+} from 'react-icons/bi';
 import {
   AiFillGithub as GitHubIcon,
   AiFillLinkedin as LinkedInIcon,
   AiFillMediumSquare as MediumIcon,
 } from 'react-icons/ai';
+import { DiRuby as RubyIcon } from 'react-icons/di';
 import avatar from '../assets/avatar.jpg';
+import homelabIcon from '../assets/homelab-icon.svg';
+import chesskernelIcon from '../assets/chesskernel-icon.svg';
+import pixelhubIcon from '../assets/pixelhub-icon.svg';
 import type { TechnologyCardProps, ProjectCardProps } from '../types';
 
 export const PROFILE_PICTURE_URL = avatar;
@@ -32,24 +54,46 @@ export const CV_URL =
 
 export const CONTACT_EMAIL = 'mateuseap@mateuseap.com';
 
-export const CORE_DEVELOPMENT: Array<TechnologyCardProps> = [
+export const PROGRAMMING_LANGUAGES: Array<TechnologyCardProps> = [
+  { name: 'C' },
+  { name: 'C++' },
+  { name: 'JavaScript', Icon: JavascriptIcon },
   { name: 'TypeScript', Icon: TypeScriptIcon },
+  { name: 'Python', Icon: PythonIcon },
+  { name: 'Java', Icon: JavaIcon },
+  { name: 'Haskell', Icon: HaskellIcon },
+  { name: 'Ruby', Icon: RubyIcon },
+];
+
+export const FRAMEWORKS_AND_TECHNOLOGIES: Array<TechnologyCardProps> = [
   { name: 'React', Icon: ReactIcon },
   { name: 'Node.js', Icon: NodeIcon },
   { name: 'NestJS', Icon: NestJSIcon },
+  { name: 'Ruby on Rails', Icon: RubyOnRailsIcon },
+  { name: 'Django', Icon: DjangoIcon },
+  { name: 'Flask', Icon: FlaskIcon },
+  { name: 'HTML5', Icon: Html5Icon },
+  { name: 'CSS3', Icon: Css3Icon },
+  { name: 'TypeORM' },
   { name: 'PostgreSQL', Icon: PostgreSQLIcon },
   { name: 'Redis', Icon: RedisIcon },
-  { name: 'GitHub Actions', Icon: GitHubActionsIcon },
+  { name: 'Keycloak' },
+  { name: 'Jest', Icon: JestIcon },
+  { name: 'Git', Icon: GitIcon },
 ];
 
-export const PLATFORM_DEVOPS: Array<TechnologyCardProps> = [
+export const PLATFORM_AND_DEVOPS: Array<TechnologyCardProps> = [
   { name: 'Kubernetes (k3s)', Icon: KubernetesIcon },
   { name: 'ArgoCD', Icon: ArgoIcon },
   { name: 'Docker', Icon: DockerIcon },
+  { name: 'GitHub Actions', Icon: GitHubActionsIcon },
   { name: 'Prometheus', Icon: PrometheusIcon },
   { name: 'Grafana', Icon: GrafanaIcon },
   { name: 'cert-manager', Icon: CertManagerIcon },
   { name: 'Traefik', Icon: TraefikIcon },
+  { name: 'Linux', Icon: LinuxIcon },
+  { name: 'AWS', Icon: AWSIcon },
+  { name: 'GCP', Icon: GoogleCloudIcon },
   { name: 'IaC', Icon: TerraformIcon },
 ];
 
@@ -67,6 +111,7 @@ export const PROJECTS: Array<ProjectCardProps> = [
       'cert-manager',
       'Traefik',
     ],
+    thumbnail: homelabIcon,
   },
   {
     id: 'chesskernel',
@@ -81,6 +126,7 @@ export const PROJECTS: Array<ProjectCardProps> = [
       'Redis',
       'Stockfish',
     ],
+    thumbnail: chesskernelIcon,
   },
   {
     id: 'pixelhub',
@@ -88,6 +134,7 @@ export const PROJECTS: Array<ProjectCardProps> = [
     githubRepoUrl: 'https://github.com/mateuseap/pixelhub',
     deployedAppUrl: 'https://pixelhub.lab.mateuseap.com',
     technologiesUsed: ['Phaser', 'Colyseus', 'LiveKit'],
+    thumbnail: pixelhubIcon,
   },
   {
     id: 'oncase',

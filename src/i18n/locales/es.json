@@ -6,38 +6,39 @@
     "changeLanguage": "Cambiar idioma"
   },
   "hero": {
-    "bio": "Apasionado por la programacion y comprometido con usar la tecnologia para ayudar y potenciar a los demas, busco activamente oportunidades para colaborar e innovar.",
+    "bio": "Apasionado por la programación y comprometido con usar la tecnología para ayudar y potenciar a los demás, busco activamente oportunidades para colaborar e innovar.",
     "role": "Ingeniero de Software Full Stack @ FestaLab",
-    "education": "Estudiante de Ingenieria en Ciencias de la Computacion @ CIn/UFPE",
+    "education": "Estudiante de Ingeniería en Ciencias de la Computación @ CIn/UFPE",
     "location": "Pernambuco, Brasil"
   },
   "skills": {
     "title": "Mis Habilidades",
-    "core": "Desarrollo",
+    "languages": "Lenguajes de Programación",
+    "frameworks": "Frameworks y Tecnologías",
     "platform": "Plataforma y DevOps"
   },
   "projects": {
     "title": "Mis Proyectos",
     "live": "Sitio",
-    "code": "Codigo",
-    "seeMore": "Ve mas de mis proyectos en",
+    "code": "Código",
+    "seeMore": "Ve más de mis proyectos en",
     "items": {
-      "homelab": "Plataforma GitOps autoalojada que ejecuta k3s en un unico VPS, con despliegues declarativos mediante ArgoCD y observabilidad completa.",
-      "chesskernel": "Plataforma de ajedrez multijugador en tiempo real con partidas en vivo, emparejamiento y analisis con Stockfish.",
+      "homelab": "Plataforma GitOps autoalojada que ejecuta k3s en un único VPS, con despliegues declarativos mediante ArgoCD y observabilidad completa.",
+      "chesskernel": "Plataforma de ajedrez multijugador en tiempo real con partidas en vivo, emparejamiento y análisis con Stockfish.",
       "pixelhub": "Mundo virtual 2D al estilo Gather, donde los jugadores se mueven por el mapa y hablan mediante chat de voz por proximidad.",
-      "2048": "Mi version del clasico juego de rompecabezas de deslizar fichas para un jugador.",
-      "chess": "El clasico juego de ajedrez, construido desde cero en Python.",
-      "festalab": "Un panel de gestion de usuarios con registro, edicion, eliminacion, listado, paginacion y busqueda.",
-      "frogNinja": "Un atractivo juego de plataformas 2D protagonizado por una rana, lleno de saltos, obstaculos y sorpresas.",
-      "oncase": "Una aplicacion web para gestionar datos de usuarios y presentarlos en un panel interactivo.",
-      "domino": "Un juego de Domino multijugador en tiempo real para dos jugadores, hecho con React y Flask-SocketIO.",
-      "palavrinha": "Un juego de adivinar palabras inspirado en Wordle, disenado para hablantes de portugues."
+      "2048": "Mi versión del clásico juego de rompecabezas de deslizar fichas para un jugador.",
+      "chess": "El clásico juego de ajedrez, construido desde cero en Python.",
+      "festalab": "Un panel de gestión de usuarios con registro, edición, eliminación, listado, paginación y búsqueda.",
+      "frogNinja": "Un atractivo juego de plataformas 2D protagonizado por una rana, lleno de saltos, obstáculos y sorpresas.",
+      "oncase": "Una aplicación web para gestionar datos de usuarios y presentarlos en un panel interactivo.",
+      "domino": "Un juego de Dominó multijugador en tiempo real para dos jugadores, hecho con React y Flask-SocketIO.",
+      "palavrinha": "Un juego de adivinar palabras inspirado en Wordle, diseñado para hablantes de portugués."
     }
   },
   "footer": {
     "connect": "Conecta",
     "getInTouch": "Contacto",
-    "contact": "Contactame",
+    "contact": "Contáctame",
     "cv": "Ver mi CV"
   }
 }

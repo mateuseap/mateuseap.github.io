@@ -8,8 +8,9 @@ import {
 import clsx from 'clsx';
 import {
   PROFILE_PICTURE_URL,
-  CORE_DEVELOPMENT,
-  PLATFORM_DEVOPS,
+  PROGRAMMING_LANGUAGES,
+  FRAMEWORKS_AND_TECHNOLOGIES,
+  PLATFORM_AND_DEVOPS,
   PROJECTS,
 } from '../../constants';
 import type { TechnologyCardProps } from '../../types';
@@ -27,7 +28,7 @@ function Home() {
       <Header />
       <main
         id='top'
-        className='flex flex-col mx-auto w-full min-h-screen max-w-[720px] px-4 pt-10 gap-y-6 text-ink dark:text-ink-dark'
+        className='flex flex-col mx-auto w-full min-h-screen max-w-[720px] scroll-mt-24 px-4 pt-10 gap-y-6 text-ink dark:text-ink-dark'
       >
         <div className='w-full flex justify-center sm:justify-start items-center text-3xl gap-x-4 font-medium'>
           <img
@@ -68,21 +69,31 @@ function Home() {
         <section className='mt-2'>
           <h2 className='text-xl font-semibold'>{t('skills.title')}</h2>
           <div className='mt-4'>
-            <p className='text-sm text-muted dark:text-muted-dark'>
-              {t('skills.core')}
+            <p className='text-sm font-medium text-muted dark:text-muted-dark'>
+              {t('skills.languages')}
             </p>
-            <div className='mt-3 grid grid-cols-3 gap-2 sm:grid-cols-5'>
-              {CORE_DEVELOPMENT.map((tech: TechnologyCardProps) => (
+            <div className='mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4'>
+              {PROGRAMMING_LANGUAGES.map((tech: TechnologyCardProps) => (
                 <TechnologyCard key={tech.name} {...tech} />
               ))}
             </div>
           </div>
           <div className='mt-6'>
-            <p className='text-sm text-muted dark:text-muted-dark'>
+            <p className='text-sm font-medium text-muted dark:text-muted-dark'>
+              {t('skills.frameworks')}
+            </p>
+            <div className='mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4'>
+              {FRAMEWORKS_AND_TECHNOLOGIES.map((tech: TechnologyCardProps) => (
+                <TechnologyCard key={tech.name} {...tech} />
+              ))}
+            </div>
+          </div>
+          <div className='mt-6'>
+            <p className='text-sm font-medium text-muted dark:text-muted-dark'>
               {t('skills.platform')}
             </p>
-            <div className='mt-3 grid grid-cols-3 gap-2 sm:grid-cols-5'>
-              {PLATFORM_DEVOPS.map((tech: TechnologyCardProps) => (
+            <div className='mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4'>
+              {PLATFORM_AND_DEVOPS.map((tech: TechnologyCardProps) => (
                 <TechnologyCard key={tech.name} {...tech} />
               ))}
             </div>

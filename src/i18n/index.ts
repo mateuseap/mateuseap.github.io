@@ -7,8 +7,8 @@ import es from './locales/es.json';
 
 export const SUPPORTED_LANGUAGES = [
   { code: 'en', label: 'English', short: 'EN' },
-  { code: 'pt-BR', label: 'Portugues', short: 'PT' },
-  { code: 'es', label: 'Espanol', short: 'ES' },
+  { code: 'pt-BR', label: 'Português', short: 'PT' },
+  { code: 'es', label: 'Español', short: 'ES' },
 ] as const;
 
 export const DEFAULT_LANGUAGE = 'en';
@@ -32,7 +32,9 @@ i18n
       useSuspense: false,
     },
     detection: {
-      order: ['localStorage', 'navigator'],
+      // Default to English; only switch when the user has explicitly chosen a
+      // language (persisted in localStorage). Browser language is not used.
+      order: ['localStorage'],
       lookupLocalStorage: 'language',
       caches: ['localStorage'],
     },

@@ -36,12 +36,9 @@ function readInitialTheme(): Theme {
     } catch {
       // Ignore storage access errors (e.g. private mode).
     }
-
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
   }
 
+  // Light is the hard default; users opt into dark via the toggle.
   return 'light';
 }
 
