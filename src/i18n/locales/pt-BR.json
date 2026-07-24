@@ -1,0 +1,43 @@
+{
+  "header": {
+    "blog": "Blog",
+    "toggleThemeToDark": "Mudar para o tema escuro",
+    "toggleThemeToLight": "Mudar para o tema claro",
+    "changeLanguage": "Mudar idioma"
+  },
+  "hero": {
+    "bio": "Apaixonado por programacao e comprometido em usar a tecnologia para ajudar e capacitar outras pessoas, busco ativamente oportunidades para colaborar e inovar.",
+    "role": "Engenheiro de Software Full Stack @ FestaLab",
+    "education": "Bacharelando em Ciencia da Computacao @ CIn/UFPE",
+    "location": "Pernambuco, Brasil"
+  },
+  "skills": {
+    "title": "Minhas Habilidades",
+    "core": "Desenvolvimento",
+    "platform": "Plataforma & DevOps"
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "live": "Site",
+    "code": "Codigo",
+    "seeMore": "Veja mais dos meus projetos em",
+    "items": {
+      "homelab": "Plataforma GitOps auto-hospedada rodando k3s em um unico VPS, com deploys declarativos via ArgoCD e observabilidade completa.",
+      "chesskernel": "Plataforma de xadrez multiplayer em tempo real com partidas ao vivo, matchmaking e analise com o Stockfish.",
+      "pixelhub": "Mundo virtual 2D no estilo Gather, onde os jogadores se movem pelo mapa e conversam por voz baseada em proximidade.",
+      "2048": "Minha versao do classico jogo de quebra-cabeca de deslizar blocos para um jogador.",
+      "chess": "O classico jogo de xadrez, construido do zero em Python.",
+      "festalab": "Um painel de gerenciamento de usuarios com cadastro, edicao, exclusao, listagem, paginacao e busca.",
+      "frogNinja": "Um envolvente jogo de plataforma 2D estrelado por um sapo, cheio de pulos, obstaculos e surpresas.",
+      "oncase": "Uma aplicacao web para gerenciar dados de usuarios e apresenta-los em um dashboard interativo.",
+      "domino": "Um jogo de Domino multiplayer em tempo real para dois jogadores, feito com React e Flask-SocketIO.",
+      "palavrinha": "Um jogo de adivinhar palavras inspirado no Wordle, feito para falantes de portugues."
+    }
+  },
+  "footer": {
+    "connect": "Conecte-se",
+    "getInTouch": "Fale comigo",
+    "contact": "Entre em contato",
+    "cv": "Ver meu curriculo"
+  }
+}

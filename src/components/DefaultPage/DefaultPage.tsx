@@ -1,4 +1,5 @@
 import Starfield from '../../components/Starfield/Starfield';
+import { useTheme } from '../../theme/ThemeProvider';
 import type { DefaultPageProps } from '../../types';
 
 function DefaultPage({
@@ -8,9 +9,11 @@ function DefaultPage({
   HtmlTag = 'div',
   starfield = true,
 }: DefaultPageProps) {
+  const { theme } = useTheme();
+
   return (
     <HtmlTag className={className}>
-      {starfield && <Starfield />}
+      {starfield && theme === 'dark' && <Starfield />}
       {children && <div className={childrenClassName}>{children}</div>}
     </HtmlTag>
   );
