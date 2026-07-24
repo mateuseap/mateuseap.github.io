@@ -41,7 +41,7 @@ function Footer() {
       <div className='my-5 border-t border-line dark:border-line-dark' />
       <div className='grid w-full grid-cols-1 items-start gap-8 px-4 py-5 sm:grid-cols-3'>
         <div className='flex flex-col items-start gap-3'>
-          <h3 className='text-sm font-semibold text-muted dark:text-muted-dark'>
+          <h3 className='text-md font-semibold text-muted dark:text-muted-dark'>
             {t('footer.connect')}
           </h3>
           {connectItems.map(item => (
@@ -58,7 +58,7 @@ function Footer() {
         </div>
 
         <div className='flex flex-col items-start gap-3'>
-          <h3 className='text-sm font-semibold text-muted dark:text-muted-dark'>
+          <h3 className='text-md font-semibold text-muted dark:text-muted-dark'>
             {t('footer.getInTouch')}
           </h3>
           <span className='font-mono text-sm'>+55 (81) 98438-8381</span>
