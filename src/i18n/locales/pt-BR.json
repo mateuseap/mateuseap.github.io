@@ -26,7 +26,7 @@
       "homelab": "Plataforma GitOps auto-hospedada rodando k3s em um único VPS, com deploys declarativos via ArgoCD e observabilidade completa.",
       "chesskernel": "Plataforma de xadrez multiplayer em tempo real com partidas ao vivo, matchmaking e análise com o Stockfish.",
       "pixelhub": "Mundo virtual 2D no estilo Gather, onde os jogadores se movem pelo mapa e conversam por voz baseada em proximidade.",
-      "mixtape": "Uma jukebox de MP3 aberta e sem login, com um player 3D de roda de cliques interativa, construída com Three.js e um backend em Node.js/Express.",
+      "mixtape": "Uma biblioteca aberta e sem login de equipamentos de som 3D interativos: um player MP3 de roda de cliques e um CD player, construída com Three.js e um backend em Node.js/Express.",
       "2048": "Minha versão do clássico jogo de quebra-cabeça de deslizar blocos para um jogador.",
       "chess": "O clássico jogo de xadrez, construído do zero em Python.",
       "festalab": "Um painel de gerenciamento de usuários com cadastro, edição, exclusão, listagem, paginação e busca.",
