@@ -43,6 +43,7 @@ import avatar from '../assets/avatar.jpg';
 import homelabIcon from '../assets/homelab-icon.svg';
 import chesskernelIcon from '../assets/chesskernel-icon.svg';
 import pixelhubIcon from '../assets/pixelhub-icon.svg';
+import mixtapeIcon from '../assets/mixtape-icon.svg';
 import type { TechnologyCardProps, ProjectCardProps } from '../types';
 
 export const PROFILE_PICTURE_URL = avatar;
@@ -135,6 +136,14 @@ export const PROJECTS: Array<ProjectCardProps> = [
     deployedAppUrl: 'https://pixelhub.lab.mateuseap.com',
     technologiesUsed: ['Phaser', 'Colyseus', 'LiveKit'],
     thumbnail: pixelhubIcon,
+  },
+  {
+    id: 'mixtape',
+    name: 'Mixtape',
+    githubRepoUrl: 'https://github.com/mateuseap/mixtape',
+    deployedAppUrl: 'https://mixtape.lab.mateuseap.com',
+    technologiesUsed: ['Node.js', 'Express', 'Three.js', 'SQLite'],
+    thumbnail: mixtapeIcon,
   },
   {
     id: 'oncase',
