@@ -26,6 +26,7 @@
       "homelab": "Self-hosted GitOps platform running k3s on a single VPS, with declarative ArgoCD deployments and end-to-end observability.",
       "chesskernel": "Real-time multiplayer chess platform with live games, matchmaking and Stockfish-powered analysis.",
       "pixelhub": "Gather-style 2D virtual world where players move around a map and talk through proximity-based voice chat.",
+      "mixtape": "An open, no-login MP3 jukebox with an interactive 3D click-wheel player, built with Three.js and a Node.js/Express backend.",
       "2048": "My rendition of the classic single-player sliding tile puzzle game.",
       "chess": "The classic chess game, built from scratch in Python.",
       "festalab": "A user management dashboard with registration, editing, deletion, listing, pagination and search.",
