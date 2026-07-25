@@ -6,7 +6,7 @@ function TechnologyCard({ name, Icon = undefined }: TechnologyCardProps) {
     <div
       className={clsx(
         'flex flex-col items-center justify-center space-y-2 font-semibold',
-        'rounded-md border p-4 text-sm shadow-sm',
+        'min-h-[88px] rounded-md border p-4 text-sm shadow-sm',
         'border-line bg-black/[0.02] text-ink',
         'dark:border-line-dark dark:bg-white/5 dark:text-ink-dark',
         'hover:border-accent/60 hover:text-accent active:translate-y-[2px]',
