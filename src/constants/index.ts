@@ -17,6 +17,8 @@ import {
   SiTerraform as TerraformIcon,
   SiGithubactions as GitHubActionsIcon,
   SiStreamlit as StreamlitIcon,
+  SiFastapi as FastAPIIcon,
+  SiAmazondynamodb as DynamoDBIcon,
 } from 'react-icons/si';
 import {
   TbBrandTypescript as TypeScriptIcon,
@@ -57,32 +59,34 @@ export const CV_URL =
 export const CONTACT_EMAIL = 'mateuseap@mateuseap.com';
 
 export const PROGRAMMING_LANGUAGES: Array<TechnologyCardProps> = [
+  { name: 'Python', Icon: PythonIcon },
   { name: 'TypeScript', Icon: TypeScriptIcon },
   { name: 'JavaScript', Icon: JavascriptIcon },
-  { name: 'Python', Icon: PythonIcon },
+  { name: 'Java', Icon: JavaIcon },
   { name: 'C' },
   { name: 'C++' },
-  { name: 'Java', Icon: JavaIcon },
-  { name: 'Haskell', Icon: HaskellIcon },
   { name: 'Ruby', Icon: RubyIcon },
+  { name: 'Haskell', Icon: HaskellIcon },
 ];
 
 export const FRAMEWORKS_AND_TECHNOLOGIES: Array<TechnologyCardProps> = [
-  { name: 'React', Icon: ReactIcon },
-  { name: 'Streamlit', Icon: StreamlitIcon },
-  { name: 'Node.js', Icon: NodeIcon },
-  { name: 'NestJS', Icon: NestJSIcon },
-  { name: 'Ruby on Rails', Icon: RubyOnRailsIcon },
+  { name: 'FastAPI', Icon: FastAPIIcon },
   { name: 'Django', Icon: DjangoIcon },
   { name: 'Flask', Icon: FlaskIcon },
+  { name: 'Node.js', Icon: NodeIcon },
+  { name: 'NestJS', Icon: NestJSIcon },
+  { name: 'PostgreSQL', Icon: PostgreSQLIcon },
+  { name: 'DynamoDB', Icon: DynamoDBIcon },
+  { name: 'Redis', Icon: RedisIcon },
+  { name: 'Git', Icon: GitIcon },
+  { name: 'Jest', Icon: JestIcon },
+  { name: 'React', Icon: ReactIcon },
+  { name: 'Streamlit', Icon: StreamlitIcon },
+  { name: 'Ruby on Rails', Icon: RubyOnRailsIcon },
   { name: 'HTML5', Icon: Html5Icon },
   { name: 'CSS3', Icon: Css3Icon },
   { name: 'TypeORM' },
-  { name: 'PostgreSQL', Icon: PostgreSQLIcon },
-  { name: 'Redis', Icon: RedisIcon },
   { name: 'Keycloak' },
-  { name: 'Jest', Icon: JestIcon },
-  { name: 'Git', Icon: GitIcon },
 ];
 
 export const PLATFORM_AND_DEVOPS: Array<TechnologyCardProps> = [
