@@ -56,7 +56,7 @@ export const PROFILE_PICTURE_URL = avatar;
 export const BLOG_URL = 'https://blog.mateuseap.com';
 
 export const CV_URL =
-  'https://drive.google.com/file/d/1a-OEa96xpDg5mu_JnUL2n8VsAO3yI0x6/view?usp=sharing';
+  'https://drive.google.com/file/d/1kxGBj8Cs8w551jkHbs0X92Zp_E78jghc/view?usp=sharing';
 
 export const CONTACT_EMAIL = 'mateuseap@mateuseap.com';
 
