@@ -16,6 +16,7 @@ import {
   SiTraefikproxy as TraefikIcon,
   SiTerraform as TerraformIcon,
   SiGithubactions as GitHubActionsIcon,
+  SiStreamlit as StreamlitIcon,
 } from 'react-icons/si';
 import {
   TbBrandTypescript as TypeScriptIcon,
@@ -56,11 +57,11 @@ export const CV_URL =
 export const CONTACT_EMAIL = 'mateuseap@mateuseap.com';
 
 export const PROGRAMMING_LANGUAGES: Array<TechnologyCardProps> = [
+  { name: 'TypeScript', Icon: TypeScriptIcon },
+  { name: 'JavaScript', Icon: JavascriptIcon },
+  { name: 'Python', Icon: PythonIcon },
   { name: 'C' },
   { name: 'C++' },
-  { name: 'JavaScript', Icon: JavascriptIcon },
-  { name: 'TypeScript', Icon: TypeScriptIcon },
-  { name: 'Python', Icon: PythonIcon },
   { name: 'Java', Icon: JavaIcon },
   { name: 'Haskell', Icon: HaskellIcon },
   { name: 'Ruby', Icon: RubyIcon },
@@ -68,6 +69,7 @@ export const PROGRAMMING_LANGUAGES: Array<TechnologyCardProps> = [
 
 export const FRAMEWORKS_AND_TECHNOLOGIES: Array<TechnologyCardProps> = [
   { name: 'React', Icon: ReactIcon },
+  { name: 'Streamlit', Icon: StreamlitIcon },
   { name: 'Node.js', Icon: NodeIcon },
   { name: 'NestJS', Icon: NestJSIcon },
   { name: 'Ruby on Rails', Icon: RubyOnRailsIcon },
