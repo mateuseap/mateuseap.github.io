@@ -43,6 +43,7 @@ import {
   AiFillLinkedin as LinkedInIcon,
   AiFillMediumSquare as MediumIcon,
 } from 'react-icons/ai';
+import { FiAward as CredlyIcon, FiCode as LeetCodeIcon } from 'react-icons/fi';
 import { DiRuby as RubyIcon } from 'react-icons/di';
 import avatar from '../assets/avatar.jpg';
 import homelabIcon from '../assets/homelab-icon.svg';
@@ -231,6 +232,16 @@ export const SOCIAL_MEDIAS = [
     url: 'https://github.com/mateuseap',
     Icon: GitHubIcon,
     label: 'GitHub',
+  },
+  {
+    url: 'https://www.credly.com/users/mateus-elias',
+    Icon: CredlyIcon,
+    label: 'Credly',
+  },
+  {
+    url: 'https://leetcode.com/u/mateuseap/',
+    Icon: LeetCodeIcon,
+    label: 'LeetCode',
   },
   {
     url: 'https://medium.com/@mateuselias',
