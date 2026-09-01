@@ -235,12 +235,12 @@ export const SOCIAL_MEDIAS = [
     label: 'GitHub',
   },
   {
-    url: 'https://www.credly.com/users/mateus-elias',
+    url: 'https://www.credly.com/users/mateuseap/badges/credly',
     Icon: CredlyIcon,
     label: 'Credly',
   },
   {
-    url: 'https://leetcode.com/u/mateuseap/',
+    url: 'https://leetcode.com/u/meap/',
     Icon: LeetCodeIcon,
     label: 'LeetCode',
   },
