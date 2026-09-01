@@ -21,6 +21,8 @@ import {
   SiSpringboot as SpringBootIcon,
   SiApacheairflow as AirflowIcon,
   SiAmazondynamodb as DynamoDBIcon,
+  SiCredly as CredlyIcon,
+  SiLeetcode as LeetCodeIcon,
 } from 'react-icons/si';
 import {
   TbBrandTypescript as TypeScriptIcon,
@@ -43,7 +45,6 @@ import {
   AiFillLinkedin as LinkedInIcon,
   AiFillMediumSquare as MediumIcon,
 } from 'react-icons/ai';
-import { FiAward as CredlyIcon, FiCode as LeetCodeIcon } from 'react-icons/fi';
 import { DiRuby as RubyIcon } from 'react-icons/di';
 import avatar from '../assets/avatar.jpg';
 import homelabIcon from '../assets/homelab-icon.svg';
